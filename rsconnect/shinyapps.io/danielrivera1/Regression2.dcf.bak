@@ -1,0 +1,12 @@
+name: Regression2
+title: Regression2
+username:
+account: danielrivera1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 761812
+bundleId: 1915177
+url: https://danielrivera1.shinyapps.io/Regression2/
+when: 1551732339.32222
+asMultiple: FALSE
+asStatic: FALSE

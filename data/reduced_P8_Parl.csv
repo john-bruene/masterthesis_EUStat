@@ -1,0 +1,858 @@
+FullName;title;Photo;birthdate;birthplace;Gender
+Charles GOERENS;NA;https://www.europarl.europa.eu/mepphoto/840.jpg;06.02.1952;Ettelbruck;M
+Jean-Marie LE PEN;NA;https://www.europarl.europa.eu/mepphoto/1023.jpg;20.06.1928;La Trinité-sur-Mer (Morbihan);M
+Reimer BÖGE;NA;https://www.europarl.europa.eu/mepphoto/1037.jpg;18.12.1951;Hasenmoor;M
+Karl-Heinz FLORENZ;NA;https://www.europarl.europa.eu/mepphoto/1038.jpg;22.10.1947;Neukirchen-Vluyn;M
+Godelieve QUISTHOUDT-ROWOHL;NA;https://www.europarl.europa.eu/mepphoto/1055.jpg;18.06.1947;Etterbeek (Belgien);F
+Bruno GOLLNISCH;NA;https://www.europarl.europa.eu/mepphoto/1164.jpg;28.01.1950;Neuilly-sur-Seine;M
+Michèle ALLIOT-MARIE;NA;https://www.europarl.europa.eu/mepphoto/1179.jpg;10.09.1946;Villeneuve le Roi;F
+Viviane REDING;NA;https://www.europarl.europa.eu/mepphoto/1185.jpg;27.04.1951;Esch-sur-Alzette;F
+Alain LAMASSOURE;NA;https://www.europarl.europa.eu/mepphoto/1204.jpg;10.02.1944;Pau;M
+Elmar BROK;NA;https://www.europarl.europa.eu/mepphoto/1263.jpg;14.05.1946;Verl (Kr. Gütersloh);M
+James NICHOLSON;NA;https://www.europarl.europa.eu/mepphoto/1318.jpg;29.01.1945;NA;M
+Miguel ARIAS CAÑETE;NA;https://www.europarl.europa.eu/mepphoto/1351.jpg;24.02.1950;Madrid;M
+David MARTIN;NA;https://www.europarl.europa.eu/mepphoto/1403.jpg;26.08.1954;Edinburgh;M
+Gérard DEPREZ;NA;https://www.europarl.europa.eu/mepphoto/1473.jpg;13.08.1943;Noville-Bastogne;M
+Emmanouil GLEZOS;NA;https://www.europarl.europa.eu/mepphoto/1654.jpg;28.08.1922;Aperathu Naxos;M
+Marianne THYSSEN;NA;https://www.europarl.europa.eu/mepphoto/1832.jpg;24.07.1956;Sint-Gillis-Waas;F
+Sylvia-Yvonne KAUFMANN;NA;https://www.europarl.europa.eu/mepphoto/1849.jpg;23.01.1955;Berlin;F
+Dieter-Lebrecht KOCH;NA;https://www.europarl.europa.eu/mepphoto/1852.jpg;07.01.1953;NA;M
+Constanze KREHL;NA;https://www.europarl.europa.eu/mepphoto/1854.jpg;14.10.1956;Stuttgart;F
+Carlos COELHO;NA;https://www.europarl.europa.eu/mepphoto/1892.jpg;20.05.1960;Lisboa;M
+Bernd LANGE;NA;https://www.europarl.europa.eu/mepphoto/1909.jpg;14.11.1955;Oldenburg;M
+Martin SCHULZ;NA;https://www.europarl.europa.eu/mepphoto/1911.jpg;20.12.1955;Hehlrath;M
+Evelyne GEBHARDT;NA;https://www.europarl.europa.eu/mepphoto/1913.jpg;19.01.1954;Montreuil-sous-Bois (France);F
+Markus FERBER;NA;https://www.europarl.europa.eu/mepphoto/1917.jpg;15.01.1965;Augsburg;M
+Thomas MANN;NA;https://www.europarl.europa.eu/mepphoto/1922.jpg;28.01.1946;Naumburg/Saale;M
+Peter LIESE;NA;https://www.europarl.europa.eu/mepphoto/1927.jpg;20.05.1965;Meschede;M
+Werner LANGEN;NA;https://www.europarl.europa.eu/mepphoto/1928.jpg;27.11.1949;Müden/Mosel;M
+Annemie NEYTS-UYTTEBROECK;NA;https://www.europarl.europa.eu/mepphoto/1946.jpg;17.06.1944;Elsene;NA
+Pervenche BERÈS;NA;https://www.europarl.europa.eu/mepphoto/1985.jpg;10.03.1957;Neully-sur-Seine;F
+José Ignacio SALAFRANCA SÁNCHEZ-NEYRA;NA;https://www.europarl.europa.eu/mepphoto/2002.jpg;31.05.1955;Madrid;M
+Françoise GROSSETÊTE;NA;https://www.europarl.europa.eu/mepphoto/2025.jpg;17.05.1946;Lyon;F
+Heidi HAUTALA;NA;https://www.europarl.europa.eu/mepphoto/2054.jpg;14.11.1955;Oulu;F
+Richard HOWITT;NA;https://www.europarl.europa.eu/mepphoto/2073.jpg;05.04.1961;Reading;M
+Brian CROWLEY;NA;https://www.europarl.europa.eu/mepphoto/2109.jpg;04.03.1964;Dublin;M
+Olli REHN;NA;https://www.europarl.europa.eu/mepphoto/2119.jpg;31.03.1962;Mikkeli;M
+Paavo VÄYRYNEN;NA;https://www.europarl.europa.eu/mepphoto/2128.jpg;02.09.1946;Kemin maalaiskunta;M
+Antonio TAJANI;NA;https://www.europarl.europa.eu/mepphoto/2187.jpg;04.08.1953;Roma;M
+Paul RÜBIG;NA;https://www.europarl.europa.eu/mepphoto/2278.jpg;06.05.1953;Wels;M
+Richard CORBETT;NA;https://www.europarl.europa.eu/mepphoto/2309.jpg;06.01.1955;Southport;M
+Rainer WIELAND;NA;https://www.europarl.europa.eu/mepphoto/2323.jpg;19.02.1957;Stuttgart - Bad Cannstatt;M
+Linda McAVAN;NA;https://www.europarl.europa.eu/mepphoto/2327.jpg;02.12.1962;Bradford;F
+Ian HUDGHTON;NA;https://www.europarl.europa.eu/mepphoto/2338.jpg;19.09.1951;Forfar;M
+Michael GAHLER;NA;https://www.europarl.europa.eu/mepphoto/2341.jpg;22.04.1960;Frankfurt/Main;M
+Othmar KARAS;NA;https://www.europarl.europa.eu/mepphoto/4246.jpg;24.12.1957;Ybbs an der Donau;M
+Frédérique RIES;NA;https://www.europarl.europa.eu/mepphoto/4253.jpg;14.05.1959;Balen-Wezel;F
+Jo LEINEN;NA;https://www.europarl.europa.eu/mepphoto/4262.jpg;06.04.1948;Bisten;M
+Udo BULLMANN;NA;https://www.europarl.europa.eu/mepphoto/4267.jpg;08.06.1956;Gießen;M
+Marit PAULSEN;NA;https://www.europarl.europa.eu/mepphoto/4270.jpg;24.11.1939;Oslo;F
+Renate SOMMER;NA;https://www.europarl.europa.eu/mepphoto/4282.jpg;10.09.1958;Bochum;F
+Angelika NIEBLER;NA;https://www.europarl.europa.eu/mepphoto/4289.jpg;18.02.1963;München;F
+Pilar AYUSO;NA;https://www.europarl.europa.eu/mepphoto/4319.jpg;16.06.1942;Badajoz;F
+Elena VALENCIANO;NA;https://www.europarl.europa.eu/mepphoto/4334.jpg;18.09.1960;Madrid;F
+Marielle DE SARNEZ;NA;https://www.europarl.europa.eu/mepphoto/4335.jpg;27.03.1951;Paris;F
+Thierry CORNILLET;NA;https://www.europarl.europa.eu/mepphoto/4338.jpg;23.07.1951;Montelimar;M
+Tokia SAÏFI;NA;https://www.europarl.europa.eu/mepphoto/4345.jpg;11.07.1959;Hautmont;F
+Claude TURMES;NA;https://www.europarl.europa.eu/mepphoto/4432.jpg;26.11.1960;Diekirch;M
+Gianni PITTELLA;NA;https://www.europarl.europa.eu/mepphoto/4436.jpg;19.11.1958;Lauria (PZ);M
+Raffaele FITTO;NA;https://www.europarl.europa.eu/mepphoto/4465.jpg;28.08.1969;Maglie;M
+Bas BELDER;NA;https://www.europarl.europa.eu/mepphoto/4507.jpg;25.10.1946;Ridderkerk;M
+Geoffrey VAN ORDEN;NA;https://www.europarl.europa.eu/mepphoto/4513.jpg;10.04.1945;Waterlooville;M
+Roger HELMER;NA;https://www.europarl.europa.eu/mepphoto/4516.jpg;25.01.1944;London;M
+Claude MORAES;NA;https://www.europarl.europa.eu/mepphoto/4519.jpg;22.10.1965;Aden;M
+Timothy Charles Ayrton TANNOCK;NA;https://www.europarl.europa.eu/mepphoto/4521.jpg;25.09.1957;Aldershot, Hants;M
+Nigel FARAGE;NA;https://www.europarl.europa.eu/mepphoto/4525.jpg;03.04.1964;Farnborough;M
+Jean LAMBERT;NA;https://www.europarl.europa.eu/mepphoto/4531.jpg;01.06.1950;Orsett;F
+Neena GILL;NA;https://www.europarl.europa.eu/mepphoto/4533.jpg;24.12.1956;Ludhiana (India);F
+Philip BRADBOURN;NA;https://www.europarl.europa.eu/mepphoto/4540.jpg;09.08.1951;Tipton;NA
+Timothy KIRKHOPE;NA;https://www.europarl.europa.eu/mepphoto/4542.jpg;29.04.1945;Newcastle upon Tyne;M
+Catherine STIHLER;NA;https://www.europarl.europa.eu/mepphoto/4545.jpg;30.07.1973;Bellshill;F
+Jill EVANS;NA;https://www.europarl.europa.eu/mepphoto/4550.jpg;08.05.1959;Ystrad Rhondda (Wales);F
+Jacqueline FOSTER;NA;https://www.europarl.europa.eu/mepphoto/4553.jpg;NA;NA;F
+Daniel HANNAN;NA;https://www.europarl.europa.eu/mepphoto/4555.jpg;01.09.1971;Lima;M
+Nirj DEVA;NA;https://www.europarl.europa.eu/mepphoto/4556.jpg;11.05.1948;Colombo (Sri Lanka);M
+Bart STAES;NA;https://www.europarl.europa.eu/mepphoto/4751.jpg;07.08.1958;Izegem;M
+Brice HORTEFEUX;NA;https://www.europarl.europa.eu/mepphoto/5565.jpg;11.05.1958;NA;M
+Kathleen VAN BREMPT;NA;https://www.europarl.europa.eu/mepphoto/5729.jpg;18.11.1969;Wilrijk;F
+Mary HONEYBALL;NA;https://www.europarl.europa.eu/mepphoto/5846.jpg;12.11.1952;Weymouth;F
+Sylvie GODDYN;NA;https://www.europarl.europa.eu/mepphoto/21331.jpg;24.06.1964;Lille;F
+Mario BORGHEZIO;NA;https://www.europarl.europa.eu/mepphoto/21817.jpg;03.12.1947;Torino;M
+Manuel dos SANTOS;NA;https://www.europarl.europa.eu/mepphoto/21918.jpg;05.12.1943;Mirandela;M
+Esther HERRANZ GARCÍA;NA;https://www.europarl.europa.eu/mepphoto/22418.jpg;03.07.1969;Logroño;F
+Alojz PETERLE;NA;https://www.europarl.europa.eu/mepphoto/23693.jpg;05.07.1948;Čužnja Vas;M
+Kateřina KONEČNÁ;NA;https://www.europarl.europa.eu/mepphoto/23699.jpg;20.01.1981;Nový Jičín;F
+Jiří MAŠTÁLKA;NA;https://www.europarl.europa.eu/mepphoto/23704.jpg;03.01.1956;Sušice;M
+Miloslav RANSDORF;NA;https://www.europarl.europa.eu/mepphoto/23706.jpg;15.02.1953;Rakovník;M
+Jan ZAHRADIL;NA;https://www.europarl.europa.eu/mepphoto/23712.jpg;20.03.1963;Praha;M
+Bogusław LIBERADZKI;NA;https://www.europarl.europa.eu/mepphoto/23768.jpg;12.09.1948;Sochaczew;M
+Janusz LEWANDOWSKI;NA;https://www.europarl.europa.eu/mepphoto/23781.jpg;13.06.1951;Lublin;M
+Janusz WOJCIECHOWSKI;NA;https://www.europarl.europa.eu/mepphoto/23784.jpg;06.12.1954;Rawa Mazowiecka;M
+Andrzej GRZYB;NA;https://www.europarl.europa.eu/mepphoto/23785.jpg;23.08.1956;Siedlików;M
+Czesław Adam SIEKIERSKI;NA;https://www.europarl.europa.eu/mepphoto/23787.jpg;08.10.1952;Stopnica;M
+Kazimierz Michał UJAZDOWSKI;NA;https://www.europarl.europa.eu/mepphoto/23791.jpg;28.07.1964;Kielce;M
+András GYÜRK;NA;https://www.europarl.europa.eu/mepphoto/23816.jpg;02.12.1972;Budapest;M
+József SZÁJER;NA;https://www.europarl.europa.eu/mepphoto/23821.jpg;07.09.1961;Sopron;M
+Monika BEŇOVÁ;NA;https://www.europarl.europa.eu/mepphoto/23868.jpg;15.08.1968;Bratislava;F
+Anna ZÁBORSKÁ;NA;https://www.europarl.europa.eu/mepphoto/23894.jpg;07.06.1948;Zürich;F
+Emmanuel MAUREL;NA;https://www.europarl.europa.eu/mepphoto/24505.jpg;10.05.1973;Epinay sur Seine;M
+Anne SANDER;NA;https://www.europarl.europa.eu/mepphoto/24594.jpg;01.10.1973;Haguenau;F
+Pascal ARIMONT;NA;https://www.europarl.europa.eu/mepphoto/24922.jpg;25.09.1974;Malmedy;M
+Ana MIRANDA;NA;https://www.europarl.europa.eu/mepphoto/24942.jpg;02.05.1971;Cuntis;F
+Eleni THEOCHAROUS;NA;https://www.europarl.europa.eu/mepphoto/25704.jpg;24.06.1953;Amiantos;F
+Florent MARCELLESI;NA;https://www.europarl.europa.eu/mepphoto/26146.jpg;10.04.1979;Angers;M
+Lefteris CHRISTOFOROU;NA;https://www.europarl.europa.eu/mepphoto/26837.jpg;31.08.1963;Ammochostos;M
+Nikolaos CHOUNTIS;NA;https://www.europarl.europa.eu/mepphoto/26851.jpg;17.09.1953;Lagadia Arkadias;M
+Mairead McGUINNESS;NA;https://www.europarl.europa.eu/mepphoto/28115.jpg;13.06.1959;Drogheda;F
+Marian HARKIN;NA;https://www.europarl.europa.eu/mepphoto/28116.jpg;26.11.1953;Sligo;F
+David CASA;NA;https://www.europarl.europa.eu/mepphoto/28122.jpg;16.11.1968;Valletta;M
+Gunnar HÖKMARK;NA;https://www.europarl.europa.eu/mepphoto/28124.jpg;19.09.1952;Ystad;M
+Christofer FJELLNER;NA;https://www.europarl.europa.eu/mepphoto/28126.jpg;13.12.1976;Västerås;M
+Anna HEDH;NA;https://www.europarl.europa.eu/mepphoto/28131.jpg;18.03.1967;Uppsala;F
+Richard ASHWORTH;NA;https://www.europarl.europa.eu/mepphoto/28132.jpg;17.09.1947;Folkestone;M
+György SCHÖPFLIN;NA;https://www.europarl.europa.eu/mepphoto/28135.jpg;24.11.1939;Budapest;M
+Lívia JÁRÓKA;NA;https://www.europarl.europa.eu/mepphoto/28141.jpg;06.10.1974;Tata;F
+Kinga GÁL;NA;https://www.europarl.europa.eu/mepphoto/28150.jpg;06.09.1970;Kolozsvár;F
+Ole CHRISTENSEN;NA;https://www.europarl.europa.eu/mepphoto/28154.jpg;07.05.1955;Pandrup;M
+Margrete AUKEN;NA;https://www.europarl.europa.eu/mepphoto/28161.jpg;06.01.1945;Arhus;F
+Lambert van NISTELROOIJ;NA;https://www.europarl.europa.eu/mepphoto/28165.jpg;05.03.1953;Nuland;M
+Vincent PEILLON;NA;https://www.europarl.europa.eu/mepphoto/28166.jpg;07.07.1960;Suresnes;M
+Miroslav MIKOLÁŠIK;NA;https://www.europarl.europa.eu/mepphoto/28178.jpg;11.09.1952;NA;M
+Vladimír MAŇKA;NA;https://www.europarl.europa.eu/mepphoto/28192.jpg;19.09.1959;Lučenec;M
+Jean-Marie CAVADA;NA;https://www.europarl.europa.eu/mepphoto/28206.jpg;24.02.1940;Epinal;M
+Nathalie GRIESBECK;NA;https://www.europarl.europa.eu/mepphoto/28208.jpg;24.05.1956;Metz;F
+Marine LE PEN;NA;https://www.europarl.europa.eu/mepphoto/28210.jpg;05.08.1968;Neuilly sur Seine;F
+Daniel CASPARY;NA;https://www.europarl.europa.eu/mepphoto/28219.jpg;04.04.1976;Karlsruhe;M
+Ingeborg GRÄSSLE;NA;https://www.europarl.europa.eu/mepphoto/28220.jpg;02.03.1961;Heidenheim;F
+Andreas SCHWAB;NA;https://www.europarl.europa.eu/mepphoto/28223.jpg;09.04.1973;NA;M
+Markus PIEPER;NA;https://www.europarl.europa.eu/mepphoto/28224.jpg;15.05.1963;Hameln;M
+Herbert REUL;NA;https://www.europarl.europa.eu/mepphoto/28225.jpg;31.08.1952;Langenfeld;M
+Christian EHLER;NA;https://www.europarl.europa.eu/mepphoto/28226.jpg;17.08.1963;München;M
+Albert DESS;NA;https://www.europarl.europa.eu/mepphoto/28228.jpg;17.04.1947;Röckersbühl;M
+Manfred WEBER;NA;https://www.europarl.europa.eu/mepphoto/28229.jpg;14.07.1972;Niederhatzkofen;M
+Rebecca HARMS;NA;https://www.europarl.europa.eu/mepphoto/28233.jpg;07.12.1956;Hambrock bei Uelzen;F
+Michael CRAMER;NA;https://www.europarl.europa.eu/mepphoto/28238.jpg;16.06.1949;Gevelsberg;M
+Helga TRÜPEL;NA;https://www.europarl.europa.eu/mepphoto/28240.jpg;21.07.1958;Moers;F
+Alexander Graf LAMBSDORFF;NA;https://www.europarl.europa.eu/mepphoto/28242.jpg;05.11.1966;Köln;M
+Wolf KLINZ;NA;https://www.europarl.europa.eu/mepphoto/28244.jpg;13.09.1941;Wien;M
+Gabriele ZIMMER;NA;https://www.europarl.europa.eu/mepphoto/28248.jpg;07.05.1955;Berlin;F
+Jörg LEICHTFRIED;NA;https://www.europarl.europa.eu/mepphoto/28251.jpg;18.06.1967;Bruck/Mur;M
+Ivo BELET;NA;https://www.europarl.europa.eu/mepphoto/28257.jpg;07.06.1959;St Truiden;M
+Sophia IN 'T VELD;NA;https://www.europarl.europa.eu/mepphoto/28266.jpg;13.09.1963;Vollenhove;F
+Jerzy BUZEK;NA;https://www.europarl.europa.eu/mepphoto/28269.jpg;03.07.1940;Śmiłowice;M
+Laima Liucija ANDRIKIENĖ;NA;https://www.europarl.europa.eu/mepphoto/28276.jpg;01.01.1958;Druskininkai;F
+Barbara KUDRYCKA;NA;https://www.europarl.europa.eu/mepphoto/28284.jpg;22.01.1956;Kolno;F
+Jan OLBRYCHT;NA;https://www.europarl.europa.eu/mepphoto/28288.jpg;21.09.1952;Rybnik;M
+Inés AYALA SENDER;NA;https://www.europarl.europa.eu/mepphoto/28292.jpg;28.03.1957;Zaragoza;F
+Jacek SARYUSZ-WOLSKI;NA;https://www.europarl.europa.eu/mepphoto/28297.jpg;19.09.1948;Łódż;M
+Iratxe GARCÍA PÉREZ;NA;https://www.europarl.europa.eu/mepphoto/28298.jpg;07.10.1974;Baracaldo;F
+Bogusław SONIK;NA;https://www.europarl.europa.eu/mepphoto/28299.jpg;03.12.1953;Kraków;M
+Tadeusz ZWIEFKA;NA;https://www.europarl.europa.eu/mepphoto/28301.jpg;28.12.1954;Tuchola;M
+Ana GOMES;NA;https://www.europarl.europa.eu/mepphoto/28306.jpg;09.02.1954;Lisboa;F
+Francisco ASSIS;NA;https://www.europarl.europa.eu/mepphoto/28307.jpg;08.01.1965;Amarante;M
+Elisa FERREIRA;NA;https://www.europarl.europa.eu/mepphoto/28308.jpg;17.10.1955;Porto;F
+Anneli JÄÄTTEENMÄKI;NA;https://www.europarl.europa.eu/mepphoto/28314.jpg;11.02.1955;Lapua;F
+Hannu TAKKULA;NA;https://www.europarl.europa.eu/mepphoto/28316.jpg;20.11.1963;NA;M
+Jaromír KOHLÍČEK;NA;https://www.europarl.europa.eu/mepphoto/28331.jpg;23.02.1953;Teplice;M
+Urszula KRUPA;NA;https://www.europarl.europa.eu/mepphoto/28334.jpg;20.10.1949;Łódź;F
+Patrizia TOIA;NA;https://www.europarl.europa.eu/mepphoto/28340.jpg;17.03.1950;NA;F
+Mirosław PIOTROWSKI;NA;https://www.europarl.europa.eu/mepphoto/28341.jpg;09.01.1966;Zielona Góra;M
+Mercedes BRESSO;NA;https://www.europarl.europa.eu/mepphoto/28346.jpg;12.07.1944;Sanremo (IM);F
+Anna FOTYGA;NA;https://www.europarl.europa.eu/mepphoto/28353.jpg;12.01.1957;Lębork;F
+Pier Antonio PANZERI;NA;https://www.europarl.europa.eu/mepphoto/28365.jpg;06.06.1955;Riviera D'Adda;M
+Ryszard CZARNECKI;NA;https://www.europarl.europa.eu/mepphoto/28372.jpg;25.01.1963;Londyn (GB);M
+Lidia Joanna GERINGER DE OEDENBERG;NA;https://www.europarl.europa.eu/mepphoto/28377.jpg;12.09.1957;Wrocław;F
+Adam GIEREK;NA;https://www.europarl.europa.eu/mepphoto/28379.jpg;17.04.1938;Zwartberg;M
+Zbigniew KUŹMIUK;NA;https://www.europarl.europa.eu/mepphoto/28389.jpg;19.09.1956;Komorowo;M
+Pilar del CASTILLO VERA;NA;https://www.europarl.europa.eu/mepphoto/28390.jpg;31.07.1952;Nador (Marruecos);F
+Luis de GRANDES PASCUAL;NA;https://www.europarl.europa.eu/mepphoto/28393.jpg;27.01.1945;Guadalajara;M
+Dariusz ROSATI;NA;https://www.europarl.europa.eu/mepphoto/28394.jpg;08.08.1946;Radom;M
+Agustín DÍAZ DE MERA GARCÍA CONSUEGRA;NA;https://www.europarl.europa.eu/mepphoto/28397.jpg;27.09.1947;Daimiel (C.R.);M
+Carlos ITURGAIZ;NA;https://www.europarl.europa.eu/mepphoto/28398.jpg;20.10.1965;Santurce;M
+Antonio LÓPEZ-ISTÚRIZ WHITE;NA;https://www.europarl.europa.eu/mepphoto/28399.jpg;01.04.1970;Pamplona;M
+Francisco José MILLÁN MON;NA;https://www.europarl.europa.eu/mepphoto/28400.jpg;08.03.1955;Pontevedra;M
+Matteo SALVINI;NA;https://www.europarl.europa.eu/mepphoto/28404.jpg;09.03.1973;Milano;M
+Willy MEYER;NA;https://www.europarl.europa.eu/mepphoto/28407.jpg;19.08.1952;Madrid;M
+Tunne KELAM;NA;https://www.europarl.europa.eu/mepphoto/28424.jpg;10.07.1936;Taheva;M
+Alessandra MUSSOLINI;NA;https://www.europarl.europa.eu/mepphoto/28429.jpg;30.12.1962;Roma;F
+Lorenzo CESA;NA;https://www.europarl.europa.eu/mepphoto/28451.jpg;16.08.1951;Arcinazzo Romano;M
+Sajjad KARIM;NA;https://www.europarl.europa.eu/mepphoto/28481.jpg;11.07.1970;Lancashire;M
+Gerard BATTEN;NA;https://www.europarl.europa.eu/mepphoto/28497.jpg;27.03.1954;London;M
+Alyn SMITH;NA;https://www.europarl.europa.eu/mepphoto/28508.jpg;15.09.1973;Glasgow;M
+Dimitrios PAPADIMOULIS;NA;https://www.europarl.europa.eu/mepphoto/28586.jpg;21.03.1955;Athina;M
+Roberts ZĪLE;NA;https://www.europarl.europa.eu/mepphoto/28615.jpg;20.06.1958;Rīga;M
+Inese VAIDERE;NA;https://www.europarl.europa.eu/mepphoto/28617.jpg;03.09.1952;Jelgavā;F
+Valdis DOMBROVSKIS;NA;https://www.europarl.europa.eu/mepphoto/28618.jpg;05.08.1971;Rīga;M
+Tatjana ŽDANOKA;NA;https://www.europarl.europa.eu/mepphoto/28619.jpg;08.05.1950;Rīga;F
+Marc TARABELLA;NA;https://www.europarl.europa.eu/mepphoto/29579.jpg;11.03.1963;Ougrée;M
+Louis ALIOT;NA;https://www.europarl.europa.eu/mepphoto/30190.jpg;04.09.1969;Toulouse;M
+Younous OMARJEE;NA;https://www.europarl.europa.eu/mepphoto/30482.jpg;30.09.1969;Saint-Denis (Réunion);M
+Syed KAMALL;NA;https://www.europarl.europa.eu/mepphoto/33569.jpg;15.02.1967;London;M
+Marian-Jean MARINESCU;NA;https://www.europarl.europa.eu/mepphoto/33982.jpg;11.08.1952;Râmnicu Vâlcea;M
+Ioan Mircea PAŞCU;NA;https://www.europarl.europa.eu/mepphoto/33984.jpg;17.02.1949;Satu Mare;M
+Daciana Octavia SÂRBU;NA;https://www.europarl.europa.eu/mepphoto/33989.jpg;15.01.1977;Arad;F
+Corina CREȚU;NA;https://www.europarl.europa.eu/mepphoto/33997.jpg;24.06.1967;Bucureşti;F
+Filiz HYUSMENOVA;NA;https://www.europarl.europa.eu/mepphoto/34249.jpg;10.06.1966;Silistra;F
+Nedzhmi ALI;NA;https://www.europarl.europa.eu/mepphoto/34250.jpg;16.07.1972;Ustren, Djebel;M
+Matthias GROOTE;NA;https://www.europarl.europa.eu/mepphoto/34728.jpg;21.10.1973;Leer;M
+Daniel DALTON;NA;https://www.europarl.europa.eu/mepphoto/35135.jpg;31.01.1974;Oxford;M
+Dame Glenis WILLMOTT;NA;https://www.europarl.europa.eu/mepphoto/35743.jpg;04.03.1951;Horden, Co. Durham;F
+Aldo PATRICIELLO;NA;https://www.europarl.europa.eu/mepphoto/36392.jpg;27.09.1957;Venafro;M
+Kati PIRI;NA;https://www.europarl.europa.eu/mepphoto/37229.jpg;08.04.1979;Celldömölk (HU);F
+Christel SCHALDEMOSE;NA;https://www.europarl.europa.eu/mepphoto/37312.jpg;04.08.1967;Odense;F
+Adina-Ioana VĂLEAN;NA;https://www.europarl.europa.eu/mepphoto/37324.jpg;16.02.1968;Ţintea;F
+Eduard-Raul HELLVIG;NA;https://www.europarl.europa.eu/mepphoto/37448.jpg;27.10.1974;Zalău;M
+Esther DE LANGE;NA;https://www.europarl.europa.eu/mepphoto/38398.jpg;19.02.1975;Spaubeek;F
+Cristian-Silviu BUŞOI;NA;https://www.europarl.europa.eu/mepphoto/38420.jpg;01.03.1978;Drobeta Turnu-Severin;M
+Georg MAYER;NA;https://www.europarl.europa.eu/mepphoto/38511.jpg;12.10.1973;Feldbach;M
+Elisabeth MORIN-CHARTIER;NA;https://www.europarl.europa.eu/mepphoto/38596.jpg;10.10.1947;Ceaux-en-Couhé;F
+Vladimir URUTCHEV;NA;https://www.europarl.europa.eu/mepphoto/38601.jpg;01.10.1954;Bukovo;M
+Iliana IOTOVA;NA;https://www.europarl.europa.eu/mepphoto/38605.jpg;24.10.1964;Sofia;F
+Victor BOŞTINARU;NA;https://www.europarl.europa.eu/mepphoto/39711.jpg;17.05.1952;Valea Mare;M
+Renate WEBER;NA;https://www.europarl.europa.eu/mepphoto/39713.jpg;03.08.1955;Botoşani;F
+Ramona Nicole MĂNESCU;NA;https://www.europarl.europa.eu/mepphoto/39717.jpg;06.12.1972;Constanţa;F
+Theodor Dumitru STOLOJAN;NA;https://www.europarl.europa.eu/mepphoto/39721.jpg;24.10.1943;Târgovişte;M
+Csaba SÓGOR;NA;https://www.europarl.europa.eu/mepphoto/39724.jpg;12.05.1964;Arad;M
+Iuliu WINKLER;NA;https://www.europarl.europa.eu/mepphoto/39725.jpg;14.03.1964;Hunedoara;M
+László TŐKÉS;NA;https://www.europarl.europa.eu/mepphoto/39726.jpg;01.04.1952;Cluj;M
+Andi CRISTEA;NA;https://www.europarl.europa.eu/mepphoto/40224.jpg;05.01.1982;Buzău;M
+Sirpa PIETIKÄINEN;NA;https://www.europarl.europa.eu/mepphoto/40599.jpg;19.04.1959;Parikkala;F
+Elisabetta GARDINI;NA;https://www.europarl.europa.eu/mepphoto/58758.jpg;03.06.1956;Padova;F
+Jan HUITEMA;NA;https://www.europarl.europa.eu/mepphoto/58789.jpg;05.07.1984;Makkinga;M
+Innocenzo LEONTINI;NA;https://www.europarl.europa.eu/mepphoto/72754.jpg;25.05.1959;NA;M
+Rachida DATI;NA;https://www.europarl.europa.eu/mepphoto/72775.jpg;27.11.1965;Saint-Rémy;F
+Nadine MORANO;NA;https://www.europarl.europa.eu/mepphoto/72779.jpg;06.11.1963;Nancy;F
+Petr MACH;NA;https://www.europarl.europa.eu/mepphoto/84175.jpg;06.05.1975;Praha;M
+Victor NEGRESCU;NA;https://www.europarl.europa.eu/mepphoto/88882.jpg;17.08.1985;București;M
+Carolina PUNSET;NA;https://www.europarl.europa.eu/mepphoto/90110.jpg;05.01.1971;Washington D. C.;F
+Ulrike RODUST;NA;https://www.europarl.europa.eu/mepphoto/93624.jpg;04.06.1949;Quakenbrück;F
+Jean-Paul DENANOT;NA;https://www.europarl.europa.eu/mepphoto/94282.jpg;24.04.1944;Boisseuil;M
+Jeroen LENAERS;NA;https://www.europarl.europa.eu/mepphoto/95074.jpg;29.04.1984;Stramproy;M
+Viorica DĂNCILĂ;NA;https://www.europarl.europa.eu/mepphoto/95281.jpg;16.12.1963;Roşiori de Vede;F
+Pavel SVOBODA;NA;https://www.europarl.europa.eu/mepphoto/96272.jpg;09.04.1962;Praha;M
+Nessa CHILDERS;NA;https://www.europarl.europa.eu/mepphoto/96603.jpg;09.10.1956;Dublin;F
+Helmut SCHOLZ;NA;https://www.europarl.europa.eu/mepphoto/96646.jpg;21.06.1954;Berlin;M
+Philippe LAMBERTS;NA;https://www.europarl.europa.eu/mepphoto/96648.jpg;14.03.1963;Bruxelles;M
+Eduard KUKAN;NA;https://www.europarl.europa.eu/mepphoto/96651.jpg;26.12.1939;Trnovec nad Váhom;M
+Monika SMOLKOVÁ;NA;https://www.europarl.europa.eu/mepphoto/96655.jpg;06.10.1956;Janovík;F
+Boris ZALA;NA;https://www.europarl.europa.eu/mepphoto/96656.jpg;09.12.1954;Zlaté Moravce;M
+Krisztina MORVAI;NA;https://www.europarl.europa.eu/mepphoto/96661.jpg;22.06.1963;Budapest;F
+Morten MESSERSCHMIDT;NA;https://www.europarl.europa.eu/mepphoto/96663.jpg;13.11.1980;Frederikssund;M
+Seán KELLY;NA;https://www.europarl.europa.eu/mepphoto/96668.jpg;26.04.1952;Killarney;M
+Louis MICHEL;NA;https://www.europarl.europa.eu/mepphoto/96670.jpg;02.09.1947;Tirlemont;M
+Marita ULVSKOG;NA;https://www.europarl.europa.eu/mepphoto/96672.jpg;04.09.1951;Luleå;F
+Olle LUDVIGSSON;NA;https://www.europarl.europa.eu/mepphoto/96673.jpg;28.10.1948;Hälsö;M
+Anna Maria CORAZZA BILDT;NA;https://www.europarl.europa.eu/mepphoto/96674.jpg;10.03.1963;Rom;F
+Isabella LÖVIN;NA;https://www.europarl.europa.eu/mepphoto/96675.jpg;03.02.1963;Helsingborg;F
+Cecilia WIKSTRÖM;NA;https://www.europarl.europa.eu/mepphoto/96677.jpg;17.10.1965;Svanstein;F
+Zigmantas BALČYTIS;NA;https://www.europarl.europa.eu/mepphoto/96680.jpg;16.11.1953;Šilutė;M
+Vilija BLINKEVIČIŪTĖ;NA;https://www.europarl.europa.eu/mepphoto/96681.jpg;03.03.1960;Linkuva;F
+Liisa JAAKONSAARI;NA;https://www.europarl.europa.eu/mepphoto/96684.jpg;02.09.1945;Oulu;F
+Rolandas PAKSAS;NA;https://www.europarl.europa.eu/mepphoto/96694.jpg;10.06.1956;Telšiai;M
+Algirdas SAUDARGAS;NA;https://www.europarl.europa.eu/mepphoto/96696.jpg;17.04.1948;Kaunas;M
+Waldemar TOMASZEWSKI;NA;https://www.europarl.europa.eu/mepphoto/96697.jpg;03.03.1965;Vilnius;M
+Viktor USPASKICH;NA;https://www.europarl.europa.eu/mepphoto/96698.jpg;24.07.1959;Vilnius;M
+Bendt BENDTSEN;NA;https://www.europarl.europa.eu/mepphoto/96705.jpg;25.03.1954;Odense;M
+João FERREIRA;NA;https://www.europarl.europa.eu/mepphoto/96706.jpg;20.11.1978;Lisboa;M
+Morten LØKKEGAARD;NA;https://www.europarl.europa.eu/mepphoto/96709.jpg;20.12.1964;Helsingør;M
+Jens ROHDE;NA;https://www.europarl.europa.eu/mepphoto/96710.jpg;18.04.1970;Holstebro;M
+Evžen TOŠENOVSKÝ;NA;https://www.europarl.europa.eu/mepphoto/96713.jpg;26.02.1956;Ostrava;M
+Pavel POC;NA;https://www.europarl.europa.eu/mepphoto/96715.jpg;26.05.1964;Havlíčkův Brod;M
+Olga SEHNALOVÁ;NA;https://www.europarl.europa.eu/mepphoto/96718.jpg;25.10.1968;Kromĕříž;F
+Bas EICKHOUT;NA;https://www.europarl.europa.eu/mepphoto/96725.jpg;08.10.1976;NA;M
+Barbara LOCHBIHLER;NA;https://www.europarl.europa.eu/mepphoto/96728.jpg;20.05.1959;Obergünzburg;F
+Santiago FISAS AYXELÀ;NA;https://www.europarl.europa.eu/mepphoto/96729.jpg;29.08.1948;Barcelona;M
+Sven GIEGOLD;NA;https://www.europarl.europa.eu/mepphoto/96730.jpg;17.11.1969;Las Palmas;M
+Ska KELLER;NA;https://www.europarl.europa.eu/mepphoto/96734.jpg;22.11.1981;W.-P.-St. Guben;F
+Patrick LE HYARIC;NA;https://www.europarl.europa.eu/mepphoto/96735.jpg;04.02.1957;Orléans;M
+Jan Philipp ALBRECHT;NA;https://www.europarl.europa.eu/mepphoto/96736.jpg;20.12.1982;Braunschweig;M
+Reinhard BÜTIKOFER;NA;https://www.europarl.europa.eu/mepphoto/96739.jpg;26.01.1953;Mannheim;M
+Yannick JADOT;NA;https://www.europarl.europa.eu/mepphoto/96740.jpg;27.07.1967;Clacy et Thierret;M
+Jean-Luc MÉLENCHON;NA;https://www.europarl.europa.eu/mepphoto/96742.jpg;19.08.1951;Tanger;M
+Michèle RIVASI;NA;https://www.europarl.europa.eu/mepphoto/96743.jpg;09.02.1953;Montélimar;F
+José BOVÉ;NA;https://www.europarl.europa.eu/mepphoto/96744.jpg;11.06.1953;Talence;M
+Arnaud DANJEAN;NA;https://www.europarl.europa.eu/mepphoto/96747.jpg;11.02.1971;Louhans;M
+Dennis de JONG;NA;https://www.europarl.europa.eu/mepphoto/96748.jpg;22.05.1955;NA;M
+Martin HÄUSLING;NA;https://www.europarl.europa.eu/mepphoto/96752.jpg;26.03.1961;Bad Wildungen;M
+Wim van de CAMP;NA;https://www.europarl.europa.eu/mepphoto/96754.jpg;27.07.1953;Oss;M
+Sabine VERHEYEN;NA;https://www.europarl.europa.eu/mepphoto/96756.jpg;24.10.1964;NA;F
+Axel VOSS;NA;https://www.europarl.europa.eu/mepphoto/96761.jpg;07.04.1963;Hameln;M
+Joachim ZELLER;NA;https://www.europarl.europa.eu/mepphoto/96762.jpg;01.07.1952;Oppeln;M
+Pablo ZALBA BIDEGAIN;NA;https://www.europarl.europa.eu/mepphoto/96763.jpg;28.01.1975;Pamplona;M
+Hermann WINKLER;NA;https://www.europarl.europa.eu/mepphoto/96764.jpg;22.04.1963;Grimma;M
+Verónica LOPE FONTAGNÉ;NA;https://www.europarl.europa.eu/mepphoto/96765.jpg;01.02.1952;Caudéran;F
+Werner KUHN;NA;https://www.europarl.europa.eu/mepphoto/96767.jpg;19.05.1955;Zingst;M
+Enrique GUERRERO SALOM;NA;https://www.europarl.europa.eu/mepphoto/96768.jpg;28.08.1948;Carcaixent;M
+Jarosław KALINOWSKI;NA;https://www.europarl.europa.eu/mepphoto/96771.jpg;12.04.1962;Wyszków;M
+Peter JAHR;NA;https://www.europarl.europa.eu/mepphoto/96772.jpg;24.04.1959;Burgstädt;M
+Jarosław WAŁĘSA;NA;https://www.europarl.europa.eu/mepphoto/96774.jpg;13.09.1976;Gdańsk;M
+Lara COMI;NA;https://www.europarl.europa.eu/mepphoto/96775.jpg;18.02.1983;Garbagnate Milanese;F
+Róża THUN UND HOHENSTEIN;NA;https://www.europarl.europa.eu/mepphoto/96776.jpg;13.04.1954;Kraków;F
+Danuta Maria HÜBNER;NA;https://www.europarl.europa.eu/mepphoto/96779.jpg;08.04.1948;Nisko;F
+Monika HOHLMEIER;NA;https://www.europarl.europa.eu/mepphoto/96780.jpg;02.07.1962;München;F
+Danuta JAZŁOWIECKA;NA;https://www.europarl.europa.eu/mepphoto/96781.jpg;19.05.1957;Opole;F
+Janusz ZEMKE;NA;https://www.europarl.europa.eu/mepphoto/96784.jpg;24.02.1949;Kowalewo;M
+Herbert DORFMANN;NA;https://www.europarl.europa.eu/mepphoto/96787.jpg;04.03.1969;Brixen;M
+Marek Józef GRÓBARCZYK;NA;https://www.europarl.europa.eu/mepphoto/96790.jpg;13.03.1968;Nowy Sącz;M
+Elżbieta Katarzyna ŁUKACIJEWSKA;NA;https://www.europarl.europa.eu/mepphoto/96791.jpg;25.11.1966;Jasło;F
+Ryszard Antoni LEGUTKO;NA;https://www.europarl.europa.eu/mepphoto/96796.jpg;24.12.1949;Kraków;M
+Tomasz Piotr PORĘBA;NA;https://www.europarl.europa.eu/mepphoto/96801.jpg;31.03.1973;Grybów;M
+Paul NUTTALL;NA;https://www.europarl.europa.eu/mepphoto/96805.jpg;30.11.1976;Liverpool;M
+Teresa JIMÉNEZ-BECERRIL BARRIO;NA;https://www.europarl.europa.eu/mepphoto/96806.jpg;24.07.1961;Sevilla;F
+Peter van DALEN;NA;https://www.europarl.europa.eu/mepphoto/96809.jpg;03.09.1958;Zwijndrecht;M
+Rosa ESTARÀS FERRAGUT;NA;https://www.europarl.europa.eu/mepphoto/96811.jpg;21.10.1965;NA;F
+Juan Fernando LÓPEZ AGUILAR;NA;https://www.europarl.europa.eu/mepphoto/96812.jpg;10.06.1961;NA;M
+Barbara MATERA;NA;https://www.europarl.europa.eu/mepphoto/96813.jpg;09.12.1981;Foggia;F
+Judith SARGENTINI;NA;https://www.europarl.europa.eu/mepphoto/96815.jpg;13.03.1974;Amsterdam;F
+Giovanni LA VIA;NA;https://www.europarl.europa.eu/mepphoto/96816.jpg;28.06.1963;NA;M
+Marisa MATIAS;NA;https://www.europarl.europa.eu/mepphoto/96820.jpg;20.02.1976;Coimbra;F
+Monica MACOVEI;NA;https://www.europarl.europa.eu/mepphoto/96824.jpg;04.02.1959;Bucureşti;F
+Norica NICOLAI;NA;https://www.europarl.europa.eu/mepphoto/96825.jpg;27.01.1958;Sinaia;F
+Tamás DEUTSCH;NA;https://www.europarl.europa.eu/mepphoto/96826.jpg;27.07.1966;Budapest;M
+Ádám KÓSA;NA;https://www.europarl.europa.eu/mepphoto/96829.jpg;01.07.1975;Budapest;M
+Jutta STEINRUCK;NA;https://www.europarl.europa.eu/mepphoto/96831.jpg;01.09.1962;Ludwigshafen;F
+Jens GEIER;NA;https://www.europarl.europa.eu/mepphoto/96833.jpg;22.06.1961;NA;M
+Traian UNGUREANU;NA;https://www.europarl.europa.eu/mepphoto/96835.jpg;01.03.1958;Bucureşti;M
+Peter SIMON;NA;https://www.europarl.europa.eu/mepphoto/96836.jpg;04.04.1967;Mannheim;M
+Petra KAMMEREVERT;NA;https://www.europarl.europa.eu/mepphoto/96837.jpg;01.06.1966;Duisburg;F
+Cristian Dan PREDA;NA;https://www.europarl.europa.eu/mepphoto/96838.jpg;26.10.1966;Bucureşti;M
+Kerstin WESTPHAL;NA;https://www.europarl.europa.eu/mepphoto/96839.jpg;11.09.1962;Hamburg;F
+Knut FLECKENSTEIN;NA;https://www.europarl.europa.eu/mepphoto/96840.jpg;20.12.1953;Bad Nauheim;M
+Ismail ERTUG;NA;https://www.europarl.europa.eu/mepphoto/96842.jpg;05.12.1975;Amberg;M
+Norbert NEUSER;NA;https://www.europarl.europa.eu/mepphoto/96844.jpg;22.03.1949;Boppard;M
+Claudiu Ciprian TĂNĂSESCU;NA;https://www.europarl.europa.eu/mepphoto/96847.jpg;19.07.1965;Bucureşti;M
+Mariya GABRIEL;NA;https://www.europarl.europa.eu/mepphoto/96848.jpg;20.05.1979;Gotse Delchev;F
+Alain CADEC;NA;https://www.europarl.europa.eu/mepphoto/96849.jpg;21.06.1953;Saint-Brieuc;M
+Thomas HÄNDEL;NA;https://www.europarl.europa.eu/mepphoto/96851.jpg;27.08.1953;Nürnberg;M
+Cornelia ERNST;NA;https://www.europarl.europa.eu/mepphoto/96852.jpg;30.11.1956;Bad Saarow;F
+Sabine LÖSING;NA;https://www.europarl.europa.eu/mepphoto/96854.jpg;30.11.1955;Göttingen;F
+Cătălin Sorin IVAN;NA;https://www.europarl.europa.eu/mepphoto/96857.jpg;23.12.1978;Galaţi;M
+Marie-Christine VERGIAT;NA;https://www.europarl.europa.eu/mepphoto/96858.jpg;23.09.1956;Roanne;F
+David Maria SASSOLI;NA;https://www.europarl.europa.eu/mepphoto/96864.jpg;30.05.1956;Firenze;M
+Karima DELLI;NA;https://www.europarl.europa.eu/mepphoto/96868.jpg;04.03.1979;Roubaix;F
+Gesine MEISSNER;NA;https://www.europarl.europa.eu/mepphoto/96870.jpg;22.02.1952;Uelzen;F
+Michael THEURER;NA;https://www.europarl.europa.eu/mepphoto/96871.jpg;12.01.1967;Tübingen;M
+Nadja HIRSCH;NA;https://www.europarl.europa.eu/mepphoto/96872.jpg;13.07.1978;München;F
+Frank ENGEL;NA;https://www.europarl.europa.eu/mepphoto/96876.jpg;10.05.1975;Luxembourg;M
+Zoltán BALCZÓ;NA;https://www.europarl.europa.eu/mepphoto/96877.jpg;24.03.1948;Nyíregyháza;M
+Andrea COZZOLINO;NA;https://www.europarl.europa.eu/mepphoto/96880.jpg;03.08.1962;Napoli;M
+Elisabeth KÖSTINGER;NA;https://www.europarl.europa.eu/mepphoto/96882.jpg;22.11.1978;Wolfsberg;F
+Eva JOLY;NA;https://www.europarl.europa.eu/mepphoto/96883.jpg;05.12.1943;Oslo;F
+Philippe JUVIN;NA;https://www.europarl.europa.eu/mepphoto/96884.jpg;01.02.1964;NA;M
+Dominique RIQUET;NA;https://www.europarl.europa.eu/mepphoto/96885.jpg;18.09.1946;Valenciennes;M
+Paolo DE CASTRO;NA;https://www.europarl.europa.eu/mepphoto/96891.jpg;02.02.1958;S. Pietro Vernotico;M
+Roberto GUALTIERI;NA;https://www.europarl.europa.eu/mepphoto/96892.jpg;19.07.1966;Roma;M
+John Stuart AGNEW;NA;https://www.europarl.europa.eu/mepphoto/96897.jpg;30.08.1949;Norwich;M
+José Manuel FERNANDES;NA;https://www.europarl.europa.eu/mepphoto/96899.jpg;26.07.1967;Vila Verde;M
+Krišjānis KARIŅŠ;NA;https://www.europarl.europa.eu/mepphoto/96901.jpg;13.12.1964;Wilmington;M
+Paulo RANGEL;NA;https://www.europarl.europa.eu/mepphoto/96903.jpg;18.02.1968;NA;M
+Takis HADJIGEORGIOU;NA;https://www.europarl.europa.eu/mepphoto/96907.jpg;11.12.1956;Pafos;M
+Tanja FAJON;NA;https://www.europarl.europa.eu/mepphoto/96911.jpg;09.05.1971;Ljubljana;F
+David CAMPBELL BANNERMAN;NA;https://www.europarl.europa.eu/mepphoto/96912.jpg;28.05.1960;Bombay (India);M
+Sergio Gaetano COFFERATI;NA;https://www.europarl.europa.eu/mepphoto/96915.jpg;30.01.1948;Sesto ed Uniti (Cremona);M
+Silvia COSTA;NA;https://www.europarl.europa.eu/mepphoto/96917.jpg;12.06.1949;Firenze;F
+Derek VAUGHAN;NA;https://www.europarl.europa.eu/mepphoto/96918.jpg;02.05.1961;Merthyr;M
+Emma McCLARKIN;NA;https://www.europarl.europa.eu/mepphoto/96919.jpg;09.10.1978;Stroud;F
+Kay SWINBURNE;NA;https://www.europarl.europa.eu/mepphoto/96920.jpg;08.06.1967;NA;F
+Izaskun BILBAO BARANDICA;NA;https://www.europarl.europa.eu/mepphoto/96922.jpg;27.03.1961;Bermeo;F
+Maurice PONGA;NA;https://www.europarl.europa.eu/mepphoto/96931.jpg;05.06.1947;Kouaoua (Nouvelle-Calédonie);M
+Birgit SIPPEL;NA;https://www.europarl.europa.eu/mepphoto/96932.jpg;29.01.1960;Bochum;F
+Milan ZVER;NA;https://www.europarl.europa.eu/mepphoto/96933.jpg;25.05.1962;Ljubljana;M
+Sandra KALNIETE;NA;https://www.europarl.europa.eu/mepphoto/96934.jpg;22.12.1952;NA;F
+Gabriel MATO;NA;https://www.europarl.europa.eu/mepphoto/96936.jpg;29.04.1961;Madrid;M
+Johannes Cornelis van BAALEN;NA;https://www.europarl.europa.eu/mepphoto/96937.jpg;17.06.1960;Rotterdam;M
+Gerben-Jan GERBRANDY;NA;https://www.europarl.europa.eu/mepphoto/96940.jpg;28.06.1967;Den Haag;M
+Marietje SCHAAKE;NA;https://www.europarl.europa.eu/mepphoto/96945.jpg;28.10.1978;Leiden;F
+Gilles PARGNEAUX;NA;https://www.europarl.europa.eu/mepphoto/96948.jpg;24.03.1957;Harcigny;M
+Vicky FORD;NA;https://www.europarl.europa.eu/mepphoto/96949.jpg;21.09.1967;Omagh;F
+Diane DODDS;NA;https://www.europarl.europa.eu/mepphoto/96951.jpg;16.08.1958;Banbridge;F
+Sylvie GUILLAUME;NA;https://www.europarl.europa.eu/mepphoto/96952.jpg;11.06.1962;Antony;F
+Catherine BEARDER;NA;https://www.europarl.europa.eu/mepphoto/96955.jpg;14.01.1949;Broxbourne;F
+Julie GIRLING;NA;https://www.europarl.europa.eu/mepphoto/96956.jpg;21.12.1956;London;F
+Ashley FOX;NA;https://www.europarl.europa.eu/mepphoto/96957.jpg;15.11.1969;Sutton Coldfield;M
+William (The Earl of) DARTMOUTH;(The Earl of);https://www.europarl.europa.eu/mepphoto/96958.jpg;23.09.1949;NA;M
+Nuno MELO;NA;https://www.europarl.europa.eu/mepphoto/96978.jpg;18.03.1966;Joane;M
+Franz OBERMAYR;NA;https://www.europarl.europa.eu/mepphoto/96981.jpg;25.05.1952;NA;M
+Eider GARDIAZABAL RUBIAL;NA;https://www.europarl.europa.eu/mepphoto/96991.jpg;12.07.1975;Bilbao;F
+Lorenzo FONTANA;NA;https://www.europarl.europa.eu/mepphoto/96993.jpg;10.04.1980;Verona;M
+Giancarlo SCOTTÀ;NA;https://www.europarl.europa.eu/mepphoto/96996.jpg;11.04.1953;Vittorio Veneto;M
+Burkhard BALZ;NA;https://www.europarl.europa.eu/mepphoto/96997.jpg;24.07.1969;Lemgo;M
+Evelyn REGNER;NA;https://www.europarl.europa.eu/mepphoto/96998.jpg;24.01.1966;Wien;F
+Karin KADENBACH;NA;https://www.europarl.europa.eu/mepphoto/97014.jpg;19.04.1958;Wien;F
+Ulrike LUNACEK;NA;https://www.europarl.europa.eu/mepphoto/97017.jpg;26.05.1957;Krems a.d. Donau;F
+Ivo VAJGL;NA;https://www.europarl.europa.eu/mepphoto/97019.jpg;03.03.1943;Maribor;M
+Robert ROCHEFORT;NA;https://www.europarl.europa.eu/mepphoto/97022.jpg;19.09.1955;NA;M
+Ivari PADAR;NA;https://www.europarl.europa.eu/mepphoto/97025.jpg;12.03.1965;NA;M
+Guy VERHOFSTADT;NA;https://www.europarl.europa.eu/mepphoto/97058.jpg;11.04.1953;Dendermonde;M
+Ramón JÁUREGUI ATONDO;NA;https://www.europarl.europa.eu/mepphoto/97078.jpg;01.09.1948;San Sebastian;M
+Indrek TARAND;NA;https://www.europarl.europa.eu/mepphoto/97136.jpg;03.02.1964;Tallinn;M
+Sylvie GOULARD;NA;https://www.europarl.europa.eu/mepphoto/97137.jpg;06.12.1964;Marseille;F
+Francisco SOSA WAGNER;NA;https://www.europarl.europa.eu/mepphoto/97170.jpg;10.06.1946;Alhucemas;M
+Mara BIZZOTTO;NA;https://www.europarl.europa.eu/mepphoto/97198.jpg;03.06.1972;Bassano del Grappa (VI);F
+Ramon TREMOSA i BALCELLS;NA;https://www.europarl.europa.eu/mepphoto/97203.jpg;30.06.1965;Barcelona;M
+Georges BACH;NA;https://www.europarl.europa.eu/mepphoto/97293.jpg;12.06.1955;Luxembourg;M
+Michel DANTIN;NA;https://www.europarl.europa.eu/mepphoto/97296.jpg;15.01.1960;Lyon;M
+Vicky MAEIJER;NA;https://www.europarl.europa.eu/mepphoto/97513.jpg;07.09.1986;Rotterdam;F
+Andrey KOVATCHEV;NA;https://www.europarl.europa.eu/mepphoto/97968.jpg;13.12.1967;Sofia;M
+Eva MAYDELL;NA;https://www.europarl.europa.eu/mepphoto/98341.jpg;26.01.1986;Sofia;F
+Tim AKER;NA;https://www.europarl.europa.eu/mepphoto/99650.jpg;23.05.1985;Orsett;M
+Constance LE GRIP;NA;https://www.europarl.europa.eu/mepphoto/101580.jpg;14.11.1960;Chatou;F
+Ildikó GÁLL-PELCZ;NA;https://www.europarl.europa.eu/mepphoto/102886.jpg;02.05.1962;Szikszó;F
+Béla KOVÁCS;NA;https://www.europarl.europa.eu/mepphoto/102887.jpg;25.02.1960;Budapest;M
+Keith TAYLOR;NA;https://www.europarl.europa.eu/mepphoto/102931.jpg;01.08.1953;Rochford;M
+Auke ZIJLSTRA;NA;https://www.europarl.europa.eu/mepphoto/103246.jpg;01.11.1964;Haskerland;M
+Terry REINTKE;NA;https://www.europarl.europa.eu/mepphoto/103381.jpg;09.05.1987;Gelsenkirchen;F
+Sergio GUTIÉRREZ PRIETO;NA;https://www.europarl.europa.eu/mepphoto/103488.jpg;11.07.1982;Escalona (Toledo);M
+Virginie ROZIÈRE;NA;https://www.europarl.europa.eu/mepphoto/103845.jpg;18.06.1976;Montpelllier;F
+Julia REID;NA;https://www.europarl.europa.eu/mepphoto/106202.jpg;16.07.1952;London;F
+Heinz K. BECKER;NA;https://www.europarl.europa.eu/mepphoto/107041.jpg;29.06.1950;Baden bei Wien;M
+Andrey NOVAKOV;NA;https://www.europarl.europa.eu/mepphoto/107212.jpg;07.07.1988;PAZARDZHIK;M
+Sampo TERHO;NA;https://www.europarl.europa.eu/mepphoto/107385.jpg;20.09.1977;Helsinki;M
+Franck PROUST;NA;https://www.europarl.europa.eu/mepphoto/108080.jpg;02.05.1963;Poitiers;M
+Philippe DE BACKER;NA;https://www.europarl.europa.eu/mepphoto/109337.jpg;04.12.1978;Ekeren;M
+Florian PHILIPPOT;NA;https://www.europarl.europa.eu/mepphoto/110977.jpg;24.10.1981;Croix;M
+Anthea McINTYRE;NA;https://www.europarl.europa.eu/mepphoto/111011.jpg;29.06.1954;London;F
+Josef WEIDENHOLZER;NA;https://www.europarl.europa.eu/mepphoto/111014.jpg;06.03.1950;St. Florian am Inn;M
+Jens NILSSON;NA;https://www.europarl.europa.eu/mepphoto/111024.jpg;25.09.1948;Västervik;M
+Svetoslav Hristov MALINOV;NA;https://www.europarl.europa.eu/mepphoto/111027.jpg;19.01.1968;Dupnitsa;M
+Kārlis ŠADURSKIS;NA;https://www.europarl.europa.eu/mepphoto/111033.jpg;11.10.1959;Rīga;M
+Petri SARVAMAA;NA;https://www.europarl.europa.eu/mepphoto/112611.jpg;15.09.1960;NA;M
+Tonino PICULA;NA;https://www.europarl.europa.eu/mepphoto/112744.jpg;31.08.1961;Mali Lošinj;M
+Biljana BORZAN;NA;https://www.europarl.europa.eu/mepphoto/112748.jpg;29.11.1971;Osijek;F
+Jozo RADOŠ;NA;https://www.europarl.europa.eu/mepphoto/112753.jpg;03.11.1956;Seonica (Bosna i Hercegovina);M
+Andrej PLENKOVIĆ;NA;https://www.europarl.europa.eu/mepphoto/112755.jpg;08.04.1970;Zagreb;M
+Birgit COLLIN-LANGEN;NA;https://www.europarl.europa.eu/mepphoto/112788.jpg;04.09.1956;Trier;F
+Eric ANDRIEU;NA;https://www.europarl.europa.eu/mepphoto/113892.jpg;14.04.1960;Narbonne;M
+Martina ANDERSON;NA;https://www.europarl.europa.eu/mepphoto/113959.jpg;16.04.1962;NA;F
+Nils TORVALDS;NA;https://www.europarl.europa.eu/mepphoto/114268.jpg;07.08.1945;Ekenäs;M
+Isabelle THOMAS;NA;https://www.europarl.europa.eu/mepphoto/114279.jpg;26.11.1961;Blanc-Mesnil;F
+Mark DEMESMAEKER;NA;https://www.europarl.europa.eu/mepphoto/117477.jpg;12.09.1958;NA;M
+Anneleen VAN BOSSUYT;NA;https://www.europarl.europa.eu/mepphoto/117491.jpg;10.01.1980;Gent;F
+Brian HAYES;NA;https://www.europarl.europa.eu/mepphoto/118658.jpg;23.08.1969;Dublin;M
+Marlene MIZZI;NA;https://www.europarl.europa.eu/mepphoto/118858.jpg;24.12.1954;Rabat;F
+Roberta METSOLA;NA;https://www.europarl.europa.eu/mepphoto/118859.jpg;18.01.1979;St Julians;F
+Ruža TOMAŠIĆ;NA;https://www.europarl.europa.eu/mepphoto/119431.jpg;10.05.1958;Mladoševica;F
+Dubravka ŠUICA;NA;https://www.europarl.europa.eu/mepphoto/119434.jpg;20.05.1957;Dubrovnik;F
+Davor Ivo STIER;NA;https://www.europarl.europa.eu/mepphoto/119435.jpg;06.01.1972;Buenos Aires;M
+Ivana MALETIĆ;NA;https://www.europarl.europa.eu/mepphoto/119436.jpg;12.10.1973;Šibenik;F
+Martina MICHELS;NA;https://www.europarl.europa.eu/mepphoto/120478.jpg;01.12.1955;Berlin;F
+Rina Ronja KARI;NA;https://www.europarl.europa.eu/mepphoto/122885.jpg;15.02.1985;København;F
+Christine REVAULT D'ALLONNES BONNEFOY;NA;https://www.europarl.europa.eu/mepphoto/124287.jpg;10.11.1971;Châteauroux;F
+Christos STYLIANIDES;NA;https://www.europarl.europa.eu/mepphoto/124688.jpg;26.06.1958;Nicosia;M
+Neoklis SYLIKIOTIS;NA;https://www.europarl.europa.eu/mepphoto/124689.jpg;24.01.1959;Lemesos;M
+Costas MAVRIDES;NA;https://www.europarl.europa.eu/mepphoto/124691.jpg;27.05.1962;Kato Dhikomo;M
+Demetris PAPADAKIS;NA;https://www.europarl.europa.eu/mepphoto/124692.jpg;22.08.1966;Ammochostos;M
+Pascal DURAND;NA;https://www.europarl.europa.eu/mepphoto/124693.jpg;03.10.1960;Montreuil-Sous-Bois;M
+Jan KELLER;NA;https://www.europarl.europa.eu/mepphoto/124695.jpg;23.01.1955;Frýdek-Místek;M
+Andrus ANSIP;NA;https://www.europarl.europa.eu/mepphoto/124696.jpg;01.10.1956;NA;M
+Kaja KALLAS;NA;https://www.europarl.europa.eu/mepphoto/124697.jpg;18.06.1977;Tallinn;F
+Marju LAURISTIN;NA;https://www.europarl.europa.eu/mepphoto/124698.jpg;07.04.1940;Tallinn;F
+Miroslav POCHE;NA;https://www.europarl.europa.eu/mepphoto/124699.jpg;03.06.1978;Chlumec nad Cidlinou;M
+Jana TOOM;NA;https://www.europarl.europa.eu/mepphoto/124700.jpg;15.10.1966;Tallinn;F
+Luděk NIEDERMAYER;NA;https://www.europarl.europa.eu/mepphoto/124701.jpg;13.03.1966;Brno;M
+Jaromír ŠTĚTINA;NA;https://www.europarl.europa.eu/mepphoto/124702.jpg;06.04.1943;Praha;M
+Tibor SZANYI;NA;https://www.europarl.europa.eu/mepphoto/124703.jpg;13.07.1956;Budapest;M
+Stanislav POLČÁK;NA;https://www.europarl.europa.eu/mepphoto/124704.jpg;21.02.1980;Slavičín;M
+István UJHELYI;NA;https://www.europarl.europa.eu/mepphoto/124705.jpg;28.02.1975;NA;M
+Pavel TELIČKA;NA;https://www.europarl.europa.eu/mepphoto/124706.jpg;24.08.1965;Washington DC;M
+Petr JEŽEK;NA;https://www.europarl.europa.eu/mepphoto/124707.jpg;28.03.1965;Praha;M
+Dita CHARANZOVÁ;NA;https://www.europarl.europa.eu/mepphoto/124708.jpg;30.04.1975;Praha;F
+Martina DLABAJOVÁ;NA;https://www.europarl.europa.eu/mepphoto/124709.jpg;26.07.1976;Zlín;F
+Michaela ŠOJDROVÁ;NA;https://www.europarl.europa.eu/mepphoto/124710.jpg;28.10.1963;Zlín;F
+Norbert ERDŐS;NA;https://www.europarl.europa.eu/mepphoto/124711.jpg;25.10.1972;Orosháza;M
+Andrea BOCSKOR;NA;https://www.europarl.europa.eu/mepphoto/124712.jpg;11.08.1978;NA;F
+Tomáš ZDECHOVSKÝ;NA;https://www.europarl.europa.eu/mepphoto/124713.jpg;02.11.1979;Havlíčkův Brod;M
+Andor DELI;NA;https://www.europarl.europa.eu/mepphoto/124714.jpg;02.05.1977;Óbecse (Szerbia);M
+György HÖLVÉNYI;NA;https://www.europarl.europa.eu/mepphoto/124715.jpg;13.06.1962;NA;M
+Tamás MESZERICS;NA;https://www.europarl.europa.eu/mepphoto/124720.jpg;04.12.1964;Győr;M
+Benedek JÁVOR;NA;https://www.europarl.europa.eu/mepphoto/124721.jpg;02.07.1972;Budapest;M
+Csaba MOLNÁR;NA;https://www.europarl.europa.eu/mepphoto/124722.jpg;04.12.1975;Csorna;M
+Péter NIEDERMÜLLER;NA;https://www.europarl.europa.eu/mepphoto/124723.jpg;03.09.1952;Budapest;M
+Louis-Joseph MANSCOUR;NA;https://www.europarl.europa.eu/mepphoto/124725.jpg;20.03.1945;La Trinité (Martinique);M
+Henna VIRKKUNEN;NA;https://www.europarl.europa.eu/mepphoto/124726.jpg;04.06.1972;Joutsa;F
+Jussi HALLA-AHO;NA;https://www.europarl.europa.eu/mepphoto/124727.jpg;27.04.1971;Tampere;M
+Marc JOULAUD;NA;https://www.europarl.europa.eu/mepphoto/124728.jpg;03.09.1967;Mayenne;M
+Renaud MUSELIER;NA;https://www.europarl.europa.eu/mepphoto/124729.jpg;06.05.1959;Marseille;M
+Fernando RUAS;NA;https://www.europarl.europa.eu/mepphoto/124730.jpg;15.01.1949;Viseu;M
+Jérôme LAVRILLEUX;NA;https://www.europarl.europa.eu/mepphoto/124731.jpg;19.09.1969;Saint-Quentin;M
+Angélique DELAHAYE;NA;https://www.europarl.europa.eu/mepphoto/124732.jpg;22.02.1963;Lyon;F
+Sofia RIBEIRO;NA;https://www.europarl.europa.eu/mepphoto/124733.jpg;17.07.1976;NA;F
+Cláudia MONTEIRO DE AGUIAR;NA;https://www.europarl.europa.eu/mepphoto/124734.jpg;08.04.1982;Funchal;F
+Miapetra KUMPULA-NATRI;NA;https://www.europarl.europa.eu/mepphoto/124735.jpg;19.05.1972;Vaasa;F
+Merja KYLLÖNEN;NA;https://www.europarl.europa.eu/mepphoto/124736.jpg;25.01.1977;Suomussalmi;F
+Maria João RODRIGUES;NA;https://www.europarl.europa.eu/mepphoto/124737.jpg;25.09.1955;Lisboa;F
+Gilles LEBRETON;NA;https://www.europarl.europa.eu/mepphoto/124738.jpg;11.10.1958;Brest;M
+Carlos ZORRINHO;NA;https://www.europarl.europa.eu/mepphoto/124739.jpg;28.05.1959;Óbidos;M
+Joëlle BERGERON;NA;https://www.europarl.europa.eu/mepphoto/124740.jpg;28.06.1949;Charlieu;F
+Ricardo SERRÃO SANTOS;NA;https://www.europarl.europa.eu/mepphoto/124741.jpg;11.10.1954;Portalegre;M
+António MARINHO E PINTO;NA;https://www.europarl.europa.eu/mepphoto/124742.jpg;10.09.1950;Amarante;M
+Artis PABRIKS;NA;https://www.europarl.europa.eu/mepphoto/124743.jpg;22.03.1966;Jūrmala;M
+Guillaume BALAS;NA;https://www.europarl.europa.eu/mepphoto/124744.jpg;30.08.1972;Rillieux-la-Pape;M
+Iveta GRIGULE-PĒTERSE;NA;https://www.europarl.europa.eu/mepphoto/124745.jpg;30.09.1964;NA;F
+Andrejs MAMIKINS;NA;https://www.europarl.europa.eu/mepphoto/124746.jpg;11.03.1976;Sanktpēterburga (RU);M
+Pedro SILVA PEREIRA;NA;https://www.europarl.europa.eu/mepphoto/124747.jpg;15.08.1962;NA;M
+Marie-Christine ARNAUTU;NA;https://www.europarl.europa.eu/mepphoto/124748.jpg;19.10.1952;Paris;F
+Marijana PETIR;NA;https://www.europarl.europa.eu/mepphoto/124749.jpg;04.10.1975;Kutina;F
+Mireille D'ORNANO;NA;https://www.europarl.europa.eu/mepphoto/124750.jpg;29.06.1951;NA;F
+Dominique MARTIN;NA;https://www.europarl.europa.eu/mepphoto/124751.jpg;01.10.1961;Scionzier;M
+Aymeric CHAUPRADE;NA;https://www.europarl.europa.eu/mepphoto/124752.jpg;13.01.1969;La Ferté Bernard;M
+Marie-Christine BOUTONNET;NA;https://www.europarl.europa.eu/mepphoto/124753.jpg;10.02.1949;Albi;F
+Ivan JAKOVČIĆ;NA;https://www.europarl.europa.eu/mepphoto/124754.jpg;15.11.1957;Poreč;M
+Jean-Luc SCHAFFHAUSER;NA;https://www.europarl.europa.eu/mepphoto/124755.jpg;17.12.1955;Cambrai;M
+Davor ŠKRLEC;NA;https://www.europarl.europa.eu/mepphoto/124756.jpg;01.01.1963;Vinkovci;M
+Steeve BRIOIS;NA;https://www.europarl.europa.eu/mepphoto/124757.jpg;28.11.1972;Seclin;M
+Mylène TROSZCZYNSKI;NA;https://www.europarl.europa.eu/mepphoto/124758.jpg;16.05.1972;Chauny;F
+Gabrielius LANDSBERGIS;NA;https://www.europarl.europa.eu/mepphoto/124759.jpg;07.01.1982;Vilnius;M
+Nicolas BAY;NA;https://www.europarl.europa.eu/mepphoto/124760.jpg;21.12.1977;Saint-Germain-en-Laye;M
+Bernard MONOT;NA;https://www.europarl.europa.eu/mepphoto/124761.jpg;03.07.1962;Nice;M
+Antanas GUOGA;NA;https://www.europarl.europa.eu/mepphoto/124763.jpg;17.12.1973;Kaunas;M
+Giovanni TOTI;NA;https://www.europarl.europa.eu/mepphoto/124764.jpg;07.09.1968;Viareggio;M
+Joëlle MÉLIN;NA;https://www.europarl.europa.eu/mepphoto/124765.jpg;26.03.1950;Versailles;F
+Petras AUŠTREVIČIUS;NA;https://www.europarl.europa.eu/mepphoto/124766.jpg;16.05.1963;Vilnius;M
+Edouard FERRAND;NA;https://www.europarl.europa.eu/mepphoto/124767.jpg;25.04.1965;NA;M
+Valentinas MAZURONIS;NA;https://www.europarl.europa.eu/mepphoto/124768.jpg;18.11.1953;Molėtai;M
+Sophie MONTEL;NA;https://www.europarl.europa.eu/mepphoto/124769.jpg;22.11.1969;Montbéliard;F
+Jean-François JALKH;NA;https://www.europarl.europa.eu/mepphoto/124770.jpg;23.05.1957;Tournan-en-Brie;M
+Dominique BILDE;NA;https://www.europarl.europa.eu/mepphoto/124771.jpg;01.08.1953;Nancy;F
+Alberto CIRIO;NA;https://www.europarl.europa.eu/mepphoto/124772.jpg;06.12.1972;Torino;M
+Jean ARTHUIS;NA;https://www.europarl.europa.eu/mepphoto/124773.jpg;07.10.1944;Saint-Martin du Bois;M
+Mady DELVAUX;NA;https://www.europarl.europa.eu/mepphoto/124776.jpg;11.10.1950;Luxembourg;F
+Tiziana BEGHIN;NA;https://www.europarl.europa.eu/mepphoto/124777.jpg;04.02.1971;NA;F
+Marco VALLI;NA;https://www.europarl.europa.eu/mepphoto/124778.jpg;29.06.1985;Milano;M
+Eleonora EVI;NA;https://www.europarl.europa.eu/mepphoto/124779.jpg;20.11.1983;Milano;F
+Marco ZANNI;NA;https://www.europarl.europa.eu/mepphoto/124780.jpg;11.07.1986;Lovere (BG);M
+Alfred SANT;NA;https://www.europarl.europa.eu/mepphoto/124781.jpg;28.02.1948;Sliema;M
+Dan NICA;NA;https://www.europarl.europa.eu/mepphoto/124784.jpg;02.07.1960;Panciu;M
+Maria GRAPINI;NA;https://www.europarl.europa.eu/mepphoto/124785.jpg;07.11.1954;Berești - Galați;F
+Damian DRĂGHICI;NA;https://www.europarl.europa.eu/mepphoto/124786.jpg;31.03.1970;București;M
+Renata BRIANO;NA;https://www.europarl.europa.eu/mepphoto/124787.jpg;23.02.1964;Genova;F
+Luigi MORGANO;NA;https://www.europarl.europa.eu/mepphoto/124788.jpg;15.03.1951;Brescia;M
+Sorin MOISĂ;NA;https://www.europarl.europa.eu/mepphoto/124789.jpg;07.01.1976;Piatra Neamț;M
+Doru-Claudian FRUNZULICĂ;NA;https://www.europarl.europa.eu/mepphoto/124790.jpg;NA;NA;M
+Daniele VIOTTI;NA;https://www.europarl.europa.eu/mepphoto/124791.jpg;08.03.1974;Alessandria;M
+Laurenţiu REBEGA;NA;https://www.europarl.europa.eu/mepphoto/124792.jpg;20.02.1976;NA;M
+Claudia ȚAPARDEL;NA;https://www.europarl.europa.eu/mepphoto/124793.jpg;16.12.1983;București;F
+Remo SERNAGIOTTO;NA;https://www.europarl.europa.eu/mepphoto/124794.jpg;01.09.1955;Montebelluna;M
+Flavio TOSI;NA;https://www.europarl.europa.eu/mepphoto/124795.jpg;18.06.1969;Verona;M
+David BORRELLI;NA;https://www.europarl.europa.eu/mepphoto/124796.jpg;28.04.1971;Treviso;M
+Marco AFFRONTE;NA;https://www.europarl.europa.eu/mepphoto/124797.jpg;06.05.1965;Rimini;M
+Alessandra MORETTI;NA;https://www.europarl.europa.eu/mepphoto/124799.jpg;24.06.1973;Vicenza;F
+Flavio ZANONATO;NA;https://www.europarl.europa.eu/mepphoto/124800.jpg;24.07.1950;Padova;M
+Cécile Kashetu KYENGE;NA;https://www.europarl.europa.eu/mepphoto/124801.jpg;28.08.1964;Kambove (CD);F
+Siegfried MUREŞAN;NA;https://www.europarl.europa.eu/mepphoto/124802.jpg;20.09.1981;Hunedoara;M
+Isabella DE MONTE;NA;https://www.europarl.europa.eu/mepphoto/124803.jpg;23.06.1971;Udine;F
+Elly SCHLEIN;NA;https://www.europarl.europa.eu/mepphoto/124804.jpg;04.05.1985;Lugano (CH);F
+Mircea DIACONU;NA;https://www.europarl.europa.eu/mepphoto/124805.jpg;24.12.1949;Com. Vlădești Argeș;M
+David McALLISTER;NA;https://www.europarl.europa.eu/mepphoto/124806.jpg;12.01.1971;NA;M
+Jens GIESEKE;NA;https://www.europarl.europa.eu/mepphoto/124807.jpg;18.05.1971;Lingen;M
+Norbert LINS;NA;https://www.europarl.europa.eu/mepphoto/124808.jpg;22.12.1977;Ravensburg;M
+Sven SCHULZE;NA;https://www.europarl.europa.eu/mepphoto/124809.jpg;31.07.1979;Quedlinburg;M
+Barbara SPINELLI;NA;https://www.europarl.europa.eu/mepphoto/124810.jpg;31.05.1946;Roma;F
+Laura AGEA;NA;https://www.europarl.europa.eu/mepphoto/124811.jpg;17.02.1978;Narni;F
+Fabio Massimo CASTALDO;NA;https://www.europarl.europa.eu/mepphoto/124812.jpg;18.09.1985;NA;M
+Dario TAMBURRANO;NA;https://www.europarl.europa.eu/mepphoto/124813.jpg;27.08.1969;Roma;M
+Simona BONAFÈ;NA;https://www.europarl.europa.eu/mepphoto/124814.jpg;12.07.1973;Varese;F
+Arne GERICKE;NA;https://www.europarl.europa.eu/mepphoto/124815.jpg;19.11.1964;Hamburg;M
+Julia REDA;NA;https://www.europarl.europa.eu/mepphoto/124816.jpg;30.11.1986;Bonn;F
+Enrico GASBARRA;NA;https://www.europarl.europa.eu/mepphoto/124817.jpg;12.08.1962;Roma;M
+Klaus BUCHNER;NA;https://www.europarl.europa.eu/mepphoto/124818.jpg;06.02.1941;München;M
+Goffredo Maria BETTINI;NA;https://www.europarl.europa.eu/mepphoto/124819.jpg;05.11.1952;Roma;M
+Bernd LUCKE;NA;https://www.europarl.europa.eu/mepphoto/124820.jpg;19.08.1962;Berlin;M
+Nicola DANTI;NA;https://www.europarl.europa.eu/mepphoto/124821.jpg;06.09.1966;Pelago (FI);M
+Dietmar KÖSTER;NA;https://www.europarl.europa.eu/mepphoto/124822.jpg;06.01.1957;Schwerte;M
+Hans-Olaf HENKEL;NA;https://www.europarl.europa.eu/mepphoto/124823.jpg;14.03.1940;Hamburg;M
+Bernd KÖLMEL;NA;https://www.europarl.europa.eu/mepphoto/124824.jpg;08.12.1958;NA;M
+Beatrix von STORCH;NA;https://www.europarl.europa.eu/mepphoto/124825.jpg;27.05.1971;Lübeck;F
+Martina WERNER;NA;https://www.europarl.europa.eu/mepphoto/124826.jpg;28.12.1961;Kassel;F
+Joachim STARBATTY;NA;https://www.europarl.europa.eu/mepphoto/124827.jpg;09.05.1940;Düsseldorf;M
+Fulvio MARTUSCIELLO;NA;https://www.europarl.europa.eu/mepphoto/124828.jpg;25.05.1968;Napoli;M
+Ulrike TREBESIUS;NA;https://www.europarl.europa.eu/mepphoto/124829.jpg;17.04.1970;Halle/Saale;F
+Marcus PRETZELL;NA;https://www.europarl.europa.eu/mepphoto/124830.jpg;16.07.1973;Rinteln;M
+Isabella ADINOLFI;NA;https://www.europarl.europa.eu/mepphoto/124831.jpg;27.03.1978;Salerno;F
+Udo VOIGT;NA;https://www.europarl.europa.eu/mepphoto/124832.jpg;14.04.1952;Viersen;M
+Laura FERRARA;NA;https://www.europarl.europa.eu/mepphoto/124833.jpg;11.09.1983;Napoli;F
+Martin SONNEBORN;NA;https://www.europarl.europa.eu/mepphoto/124834.jpg;15.05.1965;NA;M
+Rosa D'AMATO;NA;https://www.europarl.europa.eu/mepphoto/124835.jpg;30.03.1969;Taranto;F
+Maria NOICHL;NA;https://www.europarl.europa.eu/mepphoto/124836.jpg;09.01.1967;Rosenheim;F
+Joachim SCHUSTER;NA;https://www.europarl.europa.eu/mepphoto/124837.jpg;28.10.1962;Rastatt;M
+Susanne MELIOR;NA;https://www.europarl.europa.eu/mepphoto/124838.jpg;01.09.1958;Havelberg;F
+Arne LIETZ;NA;https://www.europarl.europa.eu/mepphoto/124839.jpg;23.07.1976;Güstrow;M
+Jakob von WEIZSÄCKER;NA;https://www.europarl.europa.eu/mepphoto/124840.jpg;04.03.1970;Heidelberg;M
+Iris HOFFMANN;NA;https://www.europarl.europa.eu/mepphoto/124841.jpg;29.06.1963;Rostock;F
+Daniela AIUTO;NA;https://www.europarl.europa.eu/mepphoto/124842.jpg;14.12.1975;Losanna (Svizzera);F
+Tomislav DONCHEV;NA;https://www.europarl.europa.eu/mepphoto/124843.jpg;06.08.1973;Gabrovo;M
+Piernicola PEDICINI;NA;https://www.europarl.europa.eu/mepphoto/124844.jpg;22.05.1969;Benevento;M
+Pina PICIERNO;NA;https://www.europarl.europa.eu/mepphoto/124846.jpg;10.05.1981;S. Maria Capua Vetere (CE);F
+Elena GENTILE;NA;https://www.europarl.europa.eu/mepphoto/124847.jpg;02.11.1953;NA;F
+Maria HEUBUCH;NA;https://www.europarl.europa.eu/mepphoto/124848.jpg;12.12.1958;Ravensburg;F
+Massimo PAOLUCCI;NA;https://www.europarl.europa.eu/mepphoto/124849.jpg;13.12.1959;Napoli;M
+Emil RADEV;NA;https://www.europarl.europa.eu/mepphoto/124850.jpg;26.05.1971;Varna;M
+Nicola CAPUTO;NA;https://www.europarl.europa.eu/mepphoto/124851.jpg;04.03.1966;Teverola (CE);M
+Sergei STANISHEV;NA;https://www.europarl.europa.eu/mepphoto/124852.jpg;05.05.1966;Kherson;M
+Salvatore Domenico POGLIESE;NA;https://www.europarl.europa.eu/mepphoto/124853.jpg;03.03.1972;Catania;M
+Salvatore CICU;NA;https://www.europarl.europa.eu/mepphoto/124854.jpg;03.09.1957;Palermo;M
+Georgi PIRINSKI;NA;https://www.europarl.europa.eu/mepphoto/124855.jpg;10.09.1948;New York (USA);M
+Ignazio CORRAO;NA;https://www.europarl.europa.eu/mepphoto/124856.jpg;14.01.1984;Roma;M
+Peter KOUROUMBASHEV;NA;https://www.europarl.europa.eu/mepphoto/124857.jpg;28.01.1968;Pleven;M
+Fabio DE MASI;NA;https://www.europarl.europa.eu/mepphoto/124858.jpg;07.03.1980;Groß-Gerau;M
+Giulia MOI;NA;https://www.europarl.europa.eu/mepphoto/124859.jpg;24.05.1971;Cagliari;F
+Renato SORU;NA;https://www.europarl.europa.eu/mepphoto/124860.jpg;06.08.1957;Sanluri (CG);M
+Caterina CHINNICI;NA;https://www.europarl.europa.eu/mepphoto/124861.jpg;05.11.1954;Palermo;F
+Ulrike MÜLLER;NA;https://www.europarl.europa.eu/mepphoto/124862.jpg;07.12.1962;Augsburg;F
+Stefan ECK;NA;https://www.europarl.europa.eu/mepphoto/124863.jpg;08.01.1956;Homburg;M
+Michela GIUFFRIDA;NA;https://www.europarl.europa.eu/mepphoto/124864.jpg;12.01.1964;Catania;F
+Ilhan KYUCHYUK;NA;https://www.europarl.europa.eu/mepphoto/124866.jpg;16.09.1985;Sevlievo;M
+Brando BENIFEI;NA;https://www.europarl.europa.eu/mepphoto/124867.jpg;01.01.1986;La Spezia;M
+Alessia Maria MOSCA;NA;https://www.europarl.europa.eu/mepphoto/124868.jpg;23.05.1975;NA;F
+Gianluca BUONANNO;NA;https://www.europarl.europa.eu/mepphoto/124869.jpg;15.05.1966;Borgo Sesia (VC);M
+Jeppe KOFOD;NA;https://www.europarl.europa.eu/mepphoto/124870.jpg;14.03.1974;København;M
+Nikolay BAREKOV;NA;https://www.europarl.europa.eu/mepphoto/124871.jpg;16.10.1972;Plovdiv;M
+Morten PETERSEN;NA;https://www.europarl.europa.eu/mepphoto/124872.jpg;14.09.1966;Kobenhavn;M
+Angel DZHAMBAZKI;NA;https://www.europarl.europa.eu/mepphoto/124873.jpg;21.03.1979;NA;M
+Bolesław G. PIECHA;NA;https://www.europarl.europa.eu/mepphoto/124874.jpg;19.09.1954;Rybnik;M
+Anders VISTISEN;NA;https://www.europarl.europa.eu/mepphoto/124875.jpg;12.11.1987;Viborg;M
+Rikke-Louise KARLSSON;NA;https://www.europarl.europa.eu/mepphoto/124876.jpg;29.04.1965;Svenstrup, Aalborg;F
+Jadwiga WIŚNIEWSKA;NA;https://www.europarl.europa.eu/mepphoto/124877.jpg;02.07.1963;Myszków;F
+Jørn DOHRMANN;NA;https://www.europarl.europa.eu/mepphoto/124878.jpg;09.01.1969;Vamdrup;M
+Janusz KORWIN-MIKKE;NA;https://www.europarl.europa.eu/mepphoto/124879.jpg;27.10.1942;NA;M
+Ulla TØRNÆS;NA;https://www.europarl.europa.eu/mepphoto/124880.jpg;04.09.1962;Esbjerg;F
+Marek PLURA;NA;https://www.europarl.europa.eu/mepphoto/124881.jpg;18.07.1970;Racibórz;M
+Dawid Bohdan JACKIEWICZ;NA;https://www.europarl.europa.eu/mepphoto/124882.jpg;18.03.1973;Wrocław;M
+Krystyna ŁYBACKA;NA;https://www.europarl.europa.eu/mepphoto/124883.jpg;10.02.1946;Jutrosin;F
+Kosma ZŁOTOWSKI;NA;https://www.europarl.europa.eu/mepphoto/124884.jpg;14.01.1964;Bydgoszcz;M
+Robert Jarosław IWASZKIEWICZ;NA;https://www.europarl.europa.eu/mepphoto/124886.jpg;17.05.1962;Wrocław;M
+Karol KARSKI;NA;https://www.europarl.europa.eu/mepphoto/124887.jpg;13.05.1966;Warszawa;M
+Gabriele PREUSS;NA;https://www.europarl.europa.eu/mepphoto/124888.jpg;27.09.1954;Dortmund;F
+Agnieszka KOZŁOWSKA;NA;https://www.europarl.europa.eu/mepphoto/124889.jpg;04.12.1969;Kętrzyn;F
+Adam SZEJNFELD;NA;https://www.europarl.europa.eu/mepphoto/124890.jpg;13.11.1958;Kalisz;M
+Zdzisław KRASNODĘBSKI;NA;https://www.europarl.europa.eu/mepphoto/124891.jpg;11.04.1953;Choszczno;M
+Marek JUREK;NA;https://www.europarl.europa.eu/mepphoto/124892.jpg;28.06.1960;Gorzów Wielkopolski;M
+Bogdan Andrzej ZDROJEWSKI;NA;https://www.europarl.europa.eu/mepphoto/124893.jpg;18.05.1957;Kłodzko;M
+Michał MARUSIK;NA;https://www.europarl.europa.eu/mepphoto/124894.jpg;26.09.1951;Skrzynki;M
+Krzysztof HETMAN;NA;https://www.europarl.europa.eu/mepphoto/124895.jpg;27.06.1974;Lublin;M
+Michał BONI;NA;https://www.europarl.europa.eu/mepphoto/124896.jpg;10.06.1954;Poznań;M
+Stanisław OŻÓG;NA;https://www.europarl.europa.eu/mepphoto/124897.jpg;27.05.1953;Sokołów Małopolski;M
+Julia PITERA;NA;https://www.europarl.europa.eu/mepphoto/124898.jpg;26.05.1953;Warszawa;F
+Andrzej DUDA;NA;https://www.europarl.europa.eu/mepphoto/124899.jpg;16.05.1972;Kraków;M
+Beata GOSIEWSKA;NA;https://www.europarl.europa.eu/mepphoto/124900.jpg;06.03.1971;Wysokie Mazowieckie;F
+Jana ŽITŇANSKÁ;NA;https://www.europarl.europa.eu/mepphoto/124901.jpg;14.05.1974;Bratislava;F
+Stanisław ŻÓŁTEK;NA;https://www.europarl.europa.eu/mepphoto/124902.jpg;07.05.1956;Kraków;M
+Bogdan Brunon WENTA;NA;https://www.europarl.europa.eu/mepphoto/124903.jpg;19.11.1961;Szpęgawsk;M
+József NAGY;NA;https://www.europarl.europa.eu/mepphoto/124926.jpg;11.03.1968;Dunajská Streda;M
+Branislav ŠKRIPEK;NA;https://www.europarl.europa.eu/mepphoto/124927.jpg;30.08.1970;Piešťany;M
+Richard SULÍK;NA;https://www.europarl.europa.eu/mepphoto/124928.jpg;12.01.1968;Bratislava;M
+Ivan ŠTEFANEC;NA;https://www.europarl.europa.eu/mepphoto/124929.jpg;30.09.1961;Považská Bystrica;M
+Pál CSÁKY;NA;https://www.europarl.europa.eu/mepphoto/124930.jpg;21.03.1956;Šahy;M
+Josep-Maria TERRICABRAS;NA;https://www.europarl.europa.eu/mepphoto/124932.jpg;12.07.1946;Calella;M
+Ernest MARAGALL;NA;https://www.europarl.europa.eu/mepphoto/124933.jpg;05.01.1943;Barcelona;M
+Monika VANA;NA;https://www.europarl.europa.eu/mepphoto/124934.jpg;14.09.1969;Wien;F
+Michel REIMON;NA;https://www.europarl.europa.eu/mepphoto/124935.jpg;11.07.1971;Eisenstadt;M
+Maria ARENA;NA;https://www.europarl.europa.eu/mepphoto/124936.jpg;17.12.1966;Mons;F
+Peter ERIKSSON;NA;https://www.europarl.europa.eu/mepphoto/124937.jpg;03.08.1958;Säby;M
+Janice ATKINSON;NA;https://www.europarl.europa.eu/mepphoto/124938.jpg;31.08.1962;London;F
+Diane JAMES;NA;https://www.europarl.europa.eu/mepphoto/124939.jpg;20.11.1959;NA;F
+Patrick O'FLYNN;NA;https://www.europarl.europa.eu/mepphoto/124940.jpg;29.08.1965;Cambridge;M
+Raymond FINCH;NA;https://www.europarl.europa.eu/mepphoto/124941.jpg;02.06.1963;Liverpool;M
+Molly SCOTT CATO;NA;https://www.europarl.europa.eu/mepphoto/124942.jpg;21.05.1963;Stroud;F
+Andrew LEWER;NA;https://www.europarl.europa.eu/mepphoto/124943.jpg;18.07.1971;Burnley;M
+Clare MOODY;NA;https://www.europarl.europa.eu/mepphoto/124944.jpg;30.10.1965;Chipping Norton;F
+Margot PARKER;NA;https://www.europarl.europa.eu/mepphoto/124945.jpg;24.07.1943;Grantham;F
+Edouard MARTIN;NA;https://www.europarl.europa.eu/mepphoto/124947.jpg;15.06.1963;Padul (ES);M
+Siôn SIMON;NA;https://www.europarl.europa.eu/mepphoto/124948.jpg;23.12.1968;Doncaster;M
+Lucy ANDERSON;NA;https://www.europarl.europa.eu/mepphoto/124949.jpg;NA;NA;F
+Jill SEYMOUR;NA;https://www.europarl.europa.eu/mepphoto/124950.jpg;08.05.1958;Cosford;F
+Bill ETHERIDGE;NA;https://www.europarl.europa.eu/mepphoto/124951.jpg;18.03.1970;Wolverhampton;M
+Seb DANCE;NA;https://www.europarl.europa.eu/mepphoto/124952.jpg;01.12.1981;London;M
+Jude KIRTON-DARLING;NA;https://www.europarl.europa.eu/mepphoto/124953.jpg;02.06.1977;Dar-Es-Salaam (Tanzania);F
+Paul BRANNEN;NA;https://www.europarl.europa.eu/mepphoto/124954.jpg;13.09.1962;Peterborough;M
+Jane COLLINS;NA;https://www.europarl.europa.eu/mepphoto/124955.jpg;17.02.1962;Pontefract;F
+Amjad BASHIR;NA;https://www.europarl.europa.eu/mepphoto/124956.jpg;17.09.1952;Jhelum (PK);M
+Mike HOOKEM;NA;https://www.europarl.europa.eu/mepphoto/124957.jpg;09.10.1953;Hull;M
+Jonathan ARNOTT;NA;https://www.europarl.europa.eu/mepphoto/124958.jpg;12.01.1981;Sheffield;M
+Ian DUNCAN;NA;https://www.europarl.europa.eu/mepphoto/124960.jpg;NA;NA;M
+Theresa GRIFFIN;NA;https://www.europarl.europa.eu/mepphoto/124961.jpg;11.12.1962;Coventry;F
+Afzal KHAN;NA;https://www.europarl.europa.eu/mepphoto/124962.jpg;05.04.1958;Jhelum (Pakistan);M
+Julie WARD;NA;https://www.europarl.europa.eu/mepphoto/124963.jpg;07.03.1957;Ripon;F
+Louise BOURS;NA;https://www.europarl.europa.eu/mepphoto/124964.jpg;23.12.1968;Congleton;F
+Nathan GILL;NA;https://www.europarl.europa.eu/mepphoto/124965.jpg;06.07.1973;Hull;M
+Steven WOOLFE;NA;https://www.europarl.europa.eu/mepphoto/124966.jpg;06.10.1967;Manchester;M
+David COBURN;NA;https://www.europarl.europa.eu/mepphoto/124967.jpg;11.02.1959;Glasgow;M
+Therese COMODINI CACHIA;NA;https://www.europarl.europa.eu/mepphoto/124968.jpg;23.02.1973;Attard;F
+Anneliese DODDS;NA;https://www.europarl.europa.eu/mepphoto/124969.jpg;16.03.1978;Aberdeen;F
+Miriam DALLI;NA;https://www.europarl.europa.eu/mepphoto/124970.jpg;19.05.1976;St. Julian's;F
+James CARVER;NA;https://www.europarl.europa.eu/mepphoto/124971.jpg;15.08.1969;NA;M
+Ernest URTASUN;NA;https://www.europarl.europa.eu/mepphoto/124972.jpg;27.01.1982;NA;M
+Gerolf ANNEMANS;NA;https://www.europarl.europa.eu/mepphoto/124973.jpg;08.11.1958;Antwerpen;M
+Lynn BOYLAN;NA;https://www.europarl.europa.eu/mepphoto/124984.jpg;29.11.1976;Dublin;F
+Luke Ming FLANAGAN;NA;https://www.europarl.europa.eu/mepphoto/124985.jpg;22.01.1972;Roscommon;M
+Matt CARTHY;NA;https://www.europarl.europa.eu/mepphoto/124986.jpg;19.07.1977;Birmingham;M
+Liadh NÍ RIADA;NA;https://www.europarl.europa.eu/mepphoto/124987.jpg;28.11.1966;Baile Átha Cliath;F
+Deirdre CLUNE;NA;https://www.europarl.europa.eu/mepphoto/124988.jpg;01.06.1959;Cork;F
+Fredrick FEDERLEY;NA;https://www.europarl.europa.eu/mepphoto/124989.jpg;06.05.1978;Köping;M
+Lars ADAKTUSSON;NA;https://www.europarl.europa.eu/mepphoto/124990.jpg;06.08.1955;Jönköping;M
+Jytte GUTELAND;NA;https://www.europarl.europa.eu/mepphoto/124991.jpg;16.09.1979;Brännkyrka;F
+Malin BJÖRK;NA;https://www.europarl.europa.eu/mepphoto/124992.jpg;22.05.1972;Göteborg;F
+Bodil VALERO;NA;https://www.europarl.europa.eu/mepphoto/124993.jpg;14.05.1958;Ljungarum;F
+Max ANDERSSON;NA;https://www.europarl.europa.eu/mepphoto/124994.jpg;26.10.1973;Solna;M
+Kristina WINBERG;NA;https://www.europarl.europa.eu/mepphoto/124995.jpg;27.05.1965;NA;F
+Peter LUNDGREN;NA;https://www.europarl.europa.eu/mepphoto/124996.jpg;02.02.1963;NA;M
+Soraya POST;NA;https://www.europarl.europa.eu/mepphoto/124997.jpg;15.10.1956;Göteborg;F
+Harald VILIMSKY;NA;https://www.europarl.europa.eu/mepphoto/125001.jpg;22.07.1966;NA;M
+Hugues BAYET;NA;https://www.europarl.europa.eu/mepphoto/125002.jpg;12.04.1975;Farciennes;M
+Igor ŠOLTES;NA;https://www.europarl.europa.eu/mepphoto/125003.jpg;22.08.1964;Ljubljana;M
+Franc BOGOVIČ;NA;https://www.europarl.europa.eu/mepphoto/125004.jpg;02.02.1963;Senovo;M
+Javier NART;NA;https://www.europarl.europa.eu/mepphoto/125005.jpg;19.08.1947;Laredo;M
+Francisco de Paula GAMBUS MILLET;NA;https://www.europarl.europa.eu/mepphoto/125006.jpg;21.05.1974;Barcelona;M
+Daniel BUDA;NA;https://www.europarl.europa.eu/mepphoto/125012.jpg;11.01.1970;Com. Românași;M
+Momchil NEKOV;NA;https://www.europarl.europa.eu/mepphoto/125013.jpg;13.05.1986;Silistra;M
+Claudia SCHMIDT;NA;https://www.europarl.europa.eu/mepphoto/125016.jpg;26.04.1963;Salzburg;F
+Eugen FREUND;NA;https://www.europarl.europa.eu/mepphoto/125018.jpg;15.04.1951;Wien;M
+Cora van NIEUWENHUIZEN;NA;https://www.europarl.europa.eu/mepphoto/125019.jpg;12.06.1963;Ridderkerk;F
+Paul TANG;NA;https://www.europarl.europa.eu/mepphoto/125020.jpg;23.04.1967;Haarlem;M
+Agnes JONGERIUS;NA;https://www.europarl.europa.eu/mepphoto/125021.jpg;04.11.1960;Vleuten-De-Meern;F
+Matthijs van MILTENBURG;NA;https://www.europarl.europa.eu/mepphoto/125022.jpg;02.04.1972;Rosmalen;M
+Anja HAZEKAMP;NA;https://www.europarl.europa.eu/mepphoto/125023.jpg;21.01.1968;Vlagtwedde;F
+Barbara KAPPEL;NA;https://www.europarl.europa.eu/mepphoto/125024.jpg;16.02.1965;Reith i. A.;F
+Marcel de GRAAFF;NA;https://www.europarl.europa.eu/mepphoto/125025.jpg;07.04.1962;Rotterdam;M
+Angelika MLINAR;NA;https://www.europarl.europa.eu/mepphoto/125026.jpg;29.06.1970;Altendorf;F
+Esteban GONZÁLEZ PONS;NA;https://www.europarl.europa.eu/mepphoto/125027.jpg;21.08.1964;Valencia;M
+Olaf STUGER;NA;https://www.europarl.europa.eu/mepphoto/125028.jpg;03.05.1969;Driebergen;M
+Hans JANSEN;NA;https://www.europarl.europa.eu/mepphoto/125029.jpg;17.11.1942;Amsterdam;M
+Annie SCHREIJER-PIERIK;NA;https://www.europarl.europa.eu/mepphoto/125030.jpg;17.02.1953;Diepenheim;F
+Pablo IGLESIAS;NA;https://www.europarl.europa.eu/mepphoto/125031.jpg;17.10.1978;Madrid;M
+Ramón Luis VALCÁRCEL SISO;NA;https://www.europarl.europa.eu/mepphoto/125032.jpg;16.11.1954;Murcia;M
+Teresa RODRIGUEZ-RUBIO;NA;https://www.europarl.europa.eu/mepphoto/125033.jpg;18.09.1981;Rota (Cádiz);F
+Carlos JIMÉNEZ VILLAREJO;NA;https://www.europarl.europa.eu/mepphoto/125034.jpg;03.06.1935;Málaga;M
+Lola SÁNCHEZ CALDENTEY;NA;https://www.europarl.europa.eu/mepphoto/125035.jpg;17.03.1978;Valencia;F
+Pablo ECHENIQUE;NA;https://www.europarl.europa.eu/mepphoto/125036.jpg;28.08.1978;Rosario (Santa Fe);M
+Anne-Marie MINEUR;NA;https://www.europarl.europa.eu/mepphoto/125037.jpg;14.05.1967;Oss;F
+Maite PAGAZAURTUNDÚA;NA;https://www.europarl.europa.eu/mepphoto/125038.jpg;11.02.1965;Donostia San Sebastián;F
+Fernando MAURA BARANDIARÁN;NA;https://www.europarl.europa.eu/mepphoto/125039.jpg;30.04.1955;Bilbao;M
+Beatriz BECERRA BASTERRECHEA;NA;https://www.europarl.europa.eu/mepphoto/125040.jpg;14.11.1966;Madrid;F
+Soledad CABEZÓN RUIZ;NA;https://www.europarl.europa.eu/mepphoto/125041.jpg;01.09.1973;Albaida del Aljarafe, Sevilla;F
+Javi LÓPEZ;NA;https://www.europarl.europa.eu/mepphoto/125042.jpg;11.11.1985;Madrid;M
+Inma RODRÍGUEZ-PIÑERO;NA;https://www.europarl.europa.eu/mepphoto/125043.jpg;07.01.1958;Madrid;F
+José BLANCO LÓPEZ;NA;https://www.europarl.europa.eu/mepphoto/125044.jpg;06.02.1962;Lugo;M
+Clara AGUILERA;NA;https://www.europarl.europa.eu/mepphoto/125045.jpg;03.01.1964;Granada;F
+Jonás FERNÁNDEZ;NA;https://www.europarl.europa.eu/mepphoto/125046.jpg;08.01.1979;Oviedo;M
+Paloma LÓPEZ BERMEJO;NA;https://www.europarl.europa.eu/mepphoto/125047.jpg;20.02.1962;Madrid;F
+Marina ALBIOL GUZMÁN;NA;https://www.europarl.europa.eu/mepphoto/125048.jpg;15.12.1982;Castellón;F
+Maria Lidia SENRA RODRÍGUEZ;NA;https://www.europarl.europa.eu/mepphoto/125049.jpg;14.06.1958;Pobra do Brollón (Galiza);F
+Ángela VALLINA;NA;https://www.europarl.europa.eu/mepphoto/125050.jpg;06.07.1959;Asturias;F
+Josu JUARISTI ABAUNZ;NA;https://www.europarl.europa.eu/mepphoto/125051.jpg;04.03.1964;Azkoitia;M
+Juan Carlos GIRAUTA VIDAL;NA;https://www.europarl.europa.eu/mepphoto/125052.jpg;12.03.1961;Barcelona;M
+Jordi Vicent SEBASTIA TALAVERA;NA;https://www.europarl.europa.eu/mepphoto/125053.jpg;23.11.1966;Valencia;M
+Kostas CHRYSOGONOS;NA;https://www.europarl.europa.eu/mepphoto/125061.jpg;27.06.1961;Serres;M
+Georgios KATROUGKALOS;NA;https://www.europarl.europa.eu/mepphoto/125062.jpg;27.03.1963;Athina;NA
+Georgios KYRTSOS;NA;https://www.europarl.europa.eu/mepphoto/125063.jpg;04.06.1952;Athina;M
+Maria SPYRAKI;NA;https://www.europarl.europa.eu/mepphoto/125064.jpg;11.09.1965;Larisa;F
+Elissavet VOZEMBERG-VRIONIDI;NA;https://www.europarl.europa.eu/mepphoto/125065.jpg;14.09.1956;Athina;F
+Theodoros ZAGORAKIS;NA;https://www.europarl.europa.eu/mepphoto/125067.jpg;27.10.1971;Kavala;M
+Manolis KEFALOGIANNIS;NA;https://www.europarl.europa.eu/mepphoto/125068.jpg;24.05.1959;Iraklio Kritis;M
+Notis MARIAS;NA;https://www.europarl.europa.eu/mepphoto/125069.jpg;05.04.1957;Thessaloniki;M
+Lampros FOUNTOULIS;NA;https://www.europarl.europa.eu/mepphoto/125070.jpg;23.01.1961;Nea Ionia Attikis;M
+Georgios EPITIDEIOS;NA;https://www.europarl.europa.eu/mepphoto/125071.jpg;02.03.1953;Athina;M
+Eleftherios SYNADINOS;NA;https://www.europarl.europa.eu/mepphoto/125072.jpg;06.07.1955;Argos Orestiko;M
+Sotirios ZARIANOPOULOS;NA;https://www.europarl.europa.eu/mepphoto/125090.jpg;16.02.1961;Thessaloniki;M
+Sofia SAKORAFA;NA;https://www.europarl.europa.eu/mepphoto/125091.jpg;29.04.1957;Trikala, Thessalia;F
+Kostadinka KUNEVA;NA;https://www.europarl.europa.eu/mepphoto/125092.jpg;28.09.1964;Silistra;F
+Kostas PAPADAKIS;NA;https://www.europarl.europa.eu/mepphoto/125093.jpg;18.04.1975;Athina;M
+Liliana RODRIGUES;NA;https://www.europarl.europa.eu/mepphoto/125099.jpg;13.04.1973;Funchal;F
+Miguel VIEGAS;NA;https://www.europarl.europa.eu/mepphoto/125100.jpg;27.06.1969;Paris (FR);M
+José Inácio FARIA;NA;https://www.europarl.europa.eu/mepphoto/125101.jpg;13.03.1962;Viana do Castelo;M
+Patricija ŠULIN;NA;https://www.europarl.europa.eu/mepphoto/125103.jpg;25.11.1965;Šempeter pri Gorici;F
+Romana TOMC;NA;https://www.europarl.europa.eu/mepphoto/125104.jpg;02.11.1965;NA;F
+Helga STEVENS;NA;https://www.europarl.europa.eu/mepphoto/125105.jpg;09.08.1968;Sint-Truiden;F
+Johan VAN OVERTVELDT;NA;https://www.europarl.europa.eu/mepphoto/125106.jpg;24.08.1955;Mortsel;M
+Claude ROLIN;NA;https://www.europarl.europa.eu/mepphoto/125107.jpg;26.05.1957;Charleroi;M
+Louis IDE;NA;https://www.europarl.europa.eu/mepphoto/125108.jpg;03.07.1973;Roeselare;NA
+Eva KAILI;NA;https://www.europarl.europa.eu/mepphoto/125109.jpg;26.10.1978;Thessaloniki;F
+Nikos ANDROULAKIS;NA;https://www.europarl.europa.eu/mepphoto/125110.jpg;07.02.1979;Athina;M
+Giorgos GRAMMATIKAKIS;NA;https://www.europarl.europa.eu/mepphoto/125112.jpg;21.05.1939;Irakleio;M
+Miltiadis KYRKOS;NA;https://www.europarl.europa.eu/mepphoto/125113.jpg;01.04.1959;Athina;M
+Iskra MIHAYLOVA;NA;https://www.europarl.europa.eu/mepphoto/125128.jpg;07.09.1957;Sofia;F
+Curzio MALTESE;NA;https://www.europarl.europa.eu/mepphoto/125192.jpg;30.03.1959;Milano;M
+Eleonora FORENZA;NA;https://www.europarl.europa.eu/mepphoto/125193.jpg;10.11.1976;Bari;F
+Bronis ROPĖ;NA;https://www.europarl.europa.eu/mepphoto/125214.jpg;14.04.1955;Ignalina;M
+Marco ZULLO;NA;https://www.europarl.europa.eu/mepphoto/125237.jpg;29.10.1978;Verona;M
+Massimiliano SALINI;NA;https://www.europarl.europa.eu/mepphoto/125670.jpg;11.03.1973;Soresina (CR);M
+Philippe LOISEAU;NA;https://www.europarl.europa.eu/mepphoto/125684.jpg;24.11.1957;Chartres;M
+Jiří POSPÍŠIL;NA;https://www.europarl.europa.eu/mepphoto/125706.jpg;24.11.1975;Chomutov;M
+Javier COUSO PERMUY;NA;https://www.europarl.europa.eu/mepphoto/125997.jpg;08.11.1968;Ferrol;M
+Tania GONZÁLEZ PEÑAS;NA;https://www.europarl.europa.eu/mepphoto/127330.jpg;18.10.1982;Avilés;F
+Linnéa ENGSTRÖM;NA;https://www.europarl.europa.eu/mepphoto/128588.jpg;02.04.1981;Uppsala;F
+Sander LOONES;NA;https://www.europarl.europa.eu/mepphoto/128717.jpg;26.01.1979;Veurne;M
+Urmas PAET;NA;https://www.europarl.europa.eu/mepphoto/129073.jpg;20.04.1974;Tallinn;M
+Tom VANDENKENDELAERE;NA;https://www.europarl.europa.eu/mepphoto/129164.jpg;02.09.1984;Roeselare;M
+Emilian PAVEL;NA;https://www.europarl.europa.eu/mepphoto/129256.jpg;25.10.1983;Salonta;M
+Enrique CALVET CHAMBON;NA;https://www.europarl.europa.eu/mepphoto/129407.jpg;28.10.1950;NA;M
+Hilde VAUTMANS;NA;https://www.europarl.europa.eu/mepphoto/130100.jpg;02.05.1972;Sint-Truiden;F
+Stelios KOULOGLOU;NA;https://www.europarl.europa.eu/mepphoto/130833.jpg;27.02.1953;NA;M
+Damiano ZOFFOLI;NA;https://www.europarl.europa.eu/mepphoto/131051.jpg;17.07.1960;Cesenatico;M
+Miguel URBÁN CRESPO;NA;https://www.europarl.europa.eu/mepphoto/131507.jpg;26.03.1980;NA;M
+Estefanía TORRES MARTÍNEZ;NA;https://www.europarl.europa.eu/mepphoto/131749.jpg;27.04.1982;Cudillero;F
+Mihai ŢURCANU;NA;https://www.europarl.europa.eu/mepphoto/131750.jpg;02.11.1975;Botoșani;M
+Pirkko RUOHONEN-LERNER;NA;https://www.europarl.europa.eu/mepphoto/132366.jpg;06.02.1957;Hyvinkää;F
+Edward CZESAK;NA;https://www.europarl.europa.eu/mepphoto/132925.jpg;22.02.1951;Tarnòw;M
+Karoline GRASWANDER-HAINZ;NA;https://www.europarl.europa.eu/mepphoto/133316.jpg;02.02.1974;ZAMS;F
+Stefano MAULLU;NA;https://www.europarl.europa.eu/mepphoto/133326.jpg;15.03.1962;Milano;M
+Jasenko SELIMOVIC;NA;https://www.europarl.europa.eu/mepphoto/134243.jpg;17.04.1968;Sarajevo;M
+Xabier BENITO ZILUAGA;NA;https://www.europarl.europa.eu/mepphoto/135490.jpg;23.05.1988;Getxo;M
+María Teresa GIMÉNEZ BARBAT;NA;https://www.europarl.europa.eu/mepphoto/135491.jpg;04.06.1955;Barcelona;F
+Czesław HOC;NA;https://www.europarl.europa.eu/mepphoto/135540.jpg;22.02.1954;Jelenin;M
+Sławomir KŁOSOWSKI;NA;https://www.europarl.europa.eu/mepphoto/135541.jpg;21.02.1964;Wambierzyce;M
+João PIMENTA LOPES;NA;https://www.europarl.europa.eu/mepphoto/136236.jpg;12.04.1980;Campo Grande;M
+Lieve WIERINCK;NA;https://www.europarl.europa.eu/mepphoto/183022.jpg;03.07.1957;Leuven;F
+Jakop G. DALUNDE;NA;https://www.europarl.europa.eu/mepphoto/183338.jpg;02.02.1984;NA;M
+Angelo CIOCCA;NA;https://www.europarl.europa.eu/mepphoto/183793.jpg;28.06.1975;NA;M
+Ivica TOLIĆ;NA;https://www.europarl.europa.eu/mepphoto/185340.jpg;01.09.1968;Imotski;M
+Željana ZOVKO;NA;https://www.europarl.europa.eu/mepphoto/185341.jpg;25.03.1970;Mostar;F
+Tiemo WÖLKEN;NA;https://www.europarl.europa.eu/mepphoto/185619.jpg;05.12.1985;NA;M
+John PROCTER;NA;https://www.europarl.europa.eu/mepphoto/185628.jpg;NA;NA;M
+Alex MAYER;NA;https://www.europarl.europa.eu/mepphoto/185637.jpg;02.06.1981;High Wycombe;F
+Jordi SOLÉ;NA;https://www.europarl.europa.eu/mepphoto/185974.jpg;26.10.1976;Caldes de Montbui;M
+Arndt KOHN;NA;https://www.europarl.europa.eu/mepphoto/186884.jpg;03.09.1980;Stolberg;M
+Patricia LALONDE;NA;https://www.europarl.europa.eu/mepphoto/188254.jpg;28.08.1952;Ares;F
+André ELISSEN;NA;https://www.europarl.europa.eu/mepphoto/188445.jpg;12.02.1960;Frechen;M
+Rupert MATTHEWS;NA;https://www.europarl.europa.eu/mepphoto/188622.jpg;05.12.1961;Dorking;M
+John FLACK;NA;https://www.europarl.europa.eu/mepphoto/188623.jpg;03.01.1957;Romford;M
+Wajid KHAN;NA;https://www.europarl.europa.eu/mepphoto/188624.jpg;15.10.1979;Burnley;M
+John HOWARTH;NA;https://www.europarl.europa.eu/mepphoto/188636.jpg;31.10.1958;Newcastle upon Tyne;M
+Christelle LETARD-LECHEVALIER;NA;https://www.europarl.europa.eu/mepphoto/188718.jpg;27.09.1968;Falaise;F
+Marie-Pierre VIEU;NA;https://www.europarl.europa.eu/mepphoto/188721.jpg;01.02.1967;Tarbes;F
+Jonathan BULLOCK;NA;https://www.europarl.europa.eu/mepphoto/188733.jpg;03.03.1963;Nottingham;M
+Francis ZAMMIT DIMECH;NA;https://www.europarl.europa.eu/mepphoto/188906.jpg;23.10.1954;San Giljan;M
+Dennis RADTKE;NA;https://www.europarl.europa.eu/mepphoto/188945.jpg;29.04.1979;Bochum;M
+France JAMET;NA;https://www.europarl.europa.eu/mepphoto/189065.jpg;05.02.1961;Paris;F
+Baroness Nosheena MOBARIK;Baroness;https://www.europarl.europa.eu/mepphoto/189391.jpg;16.10.1957;Man Chunnu;F
+Răzvan POPA;NA;https://www.europarl.europa.eu/mepphoto/189490.jpg;20.01.1978;Brasov;M
+Jiří PAYNE;NA;https://www.europarl.europa.eu/mepphoto/189507.jpg;07.07.1956;Praha;M
+Asim ADEMOV;NA;https://www.europarl.europa.eu/mepphoto/189525.jpg;03.12.1968;Dubnitsa;M
+Rory PALMER;NA;https://www.europarl.europa.eu/mepphoto/190099.jpg;19.11.1981;Worksop;M
+Thomas WAITZ;NA;https://www.europarl.europa.eu/mepphoto/190464.jpg;16.05.1973;Vienna;M
+Martin SCHIRDEWAN;NA;https://www.europarl.europa.eu/mepphoto/190517.jpg;12.07.1975;Berlin;M
+Jörg MEUTHEN;NA;https://www.europarl.europa.eu/mepphoto/190518.jpg;29.06.1961;Essen;M
+Caroline NAGTEGAAL;NA;https://www.europarl.europa.eu/mepphoto/190519.jpg;01.06.1980;Utrecht;F
+Lukas MANDL;NA;https://www.europarl.europa.eu/mepphoto/190713.jpg;12.07.1979;Wien;M
+Geoffroy DIDIER;NA;https://www.europarl.europa.eu/mepphoto/190774.jpg;12.04.1976;Boulogne-Billancourt;M
+Michael DETJEN;NA;https://www.europarl.europa.eu/mepphoto/190799.jpg;28.04.1958;Nordhausen;M
+Maria Gabriela ZOANĂ;NA;https://www.europarl.europa.eu/mepphoto/191377.jpg;15.06.1979;NA;F
+Jacques COLOMBIER;NA;https://www.europarl.europa.eu/mepphoto/191510.jpg;17.02.1952;Trèves;M
+Elsi KATAINEN;NA;https://www.europarl.europa.eu/mepphoto/191693.jpg;17.12.1966;Haapajärvi;F
+Miroslavs MITROFANOVS;NA;https://www.europarl.europa.eu/mepphoto/191695.jpg;18.12.1966;NA;M
+Dobromir SOŚNIERZ;NA;https://www.europarl.europa.eu/mepphoto/192298.jpg;18.10.1976;Katowice;M
+Aleksander GABELIC;NA;https://www.europarl.europa.eu/mepphoto/192465.jpg;17.09.1965;Malmö;NA
+Giuseppe FERRANDINO;NA;https://www.europarl.europa.eu/mepphoto/192634.jpg;21.03.1963;Ischia (NA);M
+Danilo Oscar LANCINI;NA;https://www.europarl.europa.eu/mepphoto/192635.jpg;15.10.1965;Rovato (BS);M
+Karine GLOANEC MAURIN;NA;https://www.europarl.europa.eu/mepphoto/193080.jpg;11.01.1958;Châteaubriant;NA
+Mirja VEHKAPERÄ;NA;https://www.europarl.europa.eu/mepphoto/193269.jpg;06.04.1976;NA;NA
+Romeo FRANZ;NA;https://www.europarl.europa.eu/mepphoto/193273.jpg;28.10.1966;Kaiserslautern;M
+Tilly METZ;NA;https://www.europarl.europa.eu/mepphoto/193292.jpg;26.05.1967;Luxembourg;F
+Christophe HANSEN;NA;https://www.europarl.europa.eu/mepphoto/193419.jpg;21.02.1982;WILTZ;M
+Giovanni MICCICHÈ;NA;https://www.europarl.europa.eu/mepphoto/193706.jpg;01.04.1954;Palermo;NA
+Igor GRÄZIN;NA;https://www.europarl.europa.eu/mepphoto/193879.jpg;27.06.1952;TARTU;NA
+Stefan GEHROLD;NA;https://www.europarl.europa.eu/mepphoto/194391.jpg;14.11.1965;Freiburg;NA
+Anders SELLSTRÖM;NA;https://www.europarl.europa.eu/mepphoto/194658.jpg;19.03.1964;Umeå;NA
+Ralph PACKET;NA;https://www.europarl.europa.eu/mepphoto/195454.jpg;17.07.1990;Etterbeek;NA
+Babette WINTER;NA;https://www.europarl.europa.eu/mepphoto/195912.jpg;06.06.1964;Castrop-Rauxel;NA
+Aleksejs LOSKUTOVS;NA;https://www.europarl.europa.eu/mepphoto/196042.jpg;22.08.1962;NA;NA
