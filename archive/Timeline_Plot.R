@@ -73,38 +73,45 @@ epg_percentages <- combined_data %>%
   spread(Legislature, Average_Score, fill = 0) %>%
   rename(Start_Average = P6, End_Average = P9)
 
-# Merge these averages with the EPG scores for proper placement in the plot
+epg_scores <- combined_data %>%
+  filter(Legislature %in% c("P6", "P9")) %>%
+  group_by(Legislature, EPG_ID, Axis_Label) %>%
+  summarise(Average_Score = mean(loyalty_score, na.rm = TRUE), .groups = "drop")
+
 epg_scores <- epg_scores %>%
   left_join(epg_percentages, by = "EPG_ID")
 
+# Ensure epg_colors is correctly set
+epg_colors <- epg_mapping %>%
+  select(EPG_ID, Color) %>%
+  distinct() %>%
+  deframe()
 
-# Updated plot with further adjustments for label spacing
+# Plot the data
 plot <- ggplot(epg_scores, aes(x = Legislature, y = Average_Score, group = EPG_ID, color = EPG_ID)) +
   geom_line(size = 1.5) +
-  # Add start averages beside P6
   geom_label_repel(
     data = epg_scores %>% filter(Legislature == "P6"),
-    aes(label = paste0(round(Start_Average, 2))),
+    aes(label = round(Start_Average, 2)),
     nudge_x = -0.3,
     hjust = 1,
     size = 5,
     family = "Lato",
-    box.padding = 0.6,   # Increased padding
-    point.padding = 0.4, # Increased point padding
-    direction = "y",     # Spread labels vertically
+    box.padding = 0.6,
+    point.padding = 0.4,
+    direction = "y",
     show.legend = FALSE
   ) +
-  # Add end averages beside P9
   geom_label_repel(
     data = epg_scores %>% filter(Legislature == "P9"),
-    aes(label = paste0(round(End_Average, 2))),
+    aes(label = round(End_Average, 2)),
     nudge_x = 0.3,
     hjust = 0,
     size = 5,
     family = "Lato",
-    box.padding = 0.6,   # Increased padding
-    point.padding = 0.4, # Increased point padding
-    direction = "y",     # Spread labels vertically
+    box.padding = 0.6,
+    point.padding = 0.4,
+    direction = "y",
     show.legend = FALSE
   ) +
   geom_text_repel(
@@ -114,8 +121,8 @@ plot <- ggplot(epg_scores, aes(x = Legislature, y = Average_Score, group = EPG_I
     size = 5,
     family = "Lato",
     max.overlaps = Inf,
-    direction = "both",   # Allow spreading both horizontally and vertically
-    box.padding = 0.5     # Add box padding for Axis_Label
+    direction = "both",
+    box.padding = 0.5
   ) +
   scale_color_manual(values = epg_colors) +
   labs(
@@ -132,7 +139,9 @@ plot <- ggplot(epg_scores, aes(x = Legislature, y = Average_Score, group = EPG_I
     legend.position = "none"
   )
 
-# Save the updated plot
+plot
+
+# Save the plot
 ggsave(
   filename = "epg_trends_with_better_label_placement.png",
   plot = plot,
@@ -142,13 +151,10 @@ ggsave(
 )
 
 ggsave(
-  filename = "epg_trends_with_label_boxes.pdf",  # PDF file
+  filename = "epg_trends_with_label_boxes.pdf",
   plot = plot,
-  width = 1920 / 100,  # Width in inches (same scale as before)
-  height = 1080 / 100, # Height in inches
-  dpi = 100,           # DPI is ignored for vector formats like PDF
-  device = "pdf"       # Export as PDF
+  width = 1920 / 100,
+  height = 1080 / 100,
+  dpi = 100,
+  device = "pdf"
 )
-
-
-plot
