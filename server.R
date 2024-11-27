@@ -8,8 +8,8 @@ library(tseries)
 library(RcmdrMisc)
 library(lmtest)
 library(dplyr)
-library(cluster)  # For silhouette
-library(clusterCrit)  # For Calinski-Harabasz and Davies-Bouldin
+library(cluster)  
+library(clusterCrit)  
 library(readr)
 library(sortable)
 library(plotly)
@@ -23,7 +23,7 @@ library(cowplot)
 library(packcircles)
 library(viridis)
 library(ggiraph)
-library(fmsb) #radar plot
+library(fmsb) 
 library(shinydashboard)
 library(sf)
 library(reactable)
@@ -33,7 +33,7 @@ library(htmltools)
 library(waffle)
 library(scales)
 library(showtext)
-library(reshape2)      # For data manipulation
+library(reshape2)      
 library(NbClust)       
 library(gridExtra)     
 
@@ -44,11 +44,11 @@ P8 <- read.csv("data/P8_umap_scores_red_NEW.csv")[, -(1:3)]
 P9 <- read.csv("data/P9_umap_scores_red_NEW.csv")[, -(1:3)]
 
 
+#change the sign of the first dimension (to fit left-right scaling)
+
 P7$coord1D <- P7$coord1D*-1
 P8$coord1D <- P8$coord1D*-1
 P9$coord1D <- P9$coord1D*-1
-
-
 
 P7$coord2D_red <- P7$coord2D_red*-1
 P8$coord2D_red <- P8$coord2D_red*-1
@@ -64,28 +64,11 @@ five_thirty <- read.csv("www/clustered_congress.csv")
 
 
 
-#######---------------------------------------------------
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-# 
-# # Auswahl der gewünschten Spalten
-# selected_columns <- c("FullName", "Country", "Party", "EPG", "birthdate", "birthplace", 
-#                       "Age_At_Start", "Winning_Score", "Attendance_Score", "loyalty_score", "Activity_Index")
-# 
-# # Den Datensatz auf die ausgewählten Spalten beschränken
-# P9_reduced <- P9[, selected_columns]
 
 shinyServer(function(input, output, session) {
   
@@ -161,13 +144,7 @@ shinyServer(function(input, output, session) {
   )
   
 
-  
-  
-  
 
-  
-  
-  
   
   
   
@@ -3267,7 +3244,16 @@ shinyServer(function(input, output, session) {
   
   output$dynamicTitle <- renderUI({
     data <- get_selected_data()
-    num_clusters <- length(unique(data$Cluster))
+    
+    # Filter clusters if the checkbox is checked
+    if (input$ignore_first_cluster) {
+      filtered_data <- data[data$Cluster != 0, ]
+    } else {
+      filtered_data <- data
+    }
+    
+    # Count unique clusters
+    num_clusters <- length(unique(filtered_data$Cluster))
     
     # Convert parliament_period from "P6", "P7", etc., to "6th", "7th", etc.
     parliament_period <- switch(
@@ -3284,6 +3270,7 @@ shinyServer(function(input, output, session) {
                   "<span style='font-size: 0.8em; opacity: 0.6;'>-ish</span> Groups of Politicians in the ", parliament_period))
     )
   })
+  
   
   
   

@@ -1295,16 +1295,7 @@ shinyUI(fluidPage(
                               mainPanel(
                                 fluidRow(
                                   
-                                  # Gap Statistic and Description
-                                  conditionalPanel(
-                                    condition = "input.enable_gapstat",
-                                    column(
-                                      width = 6,
-                                      bsTooltip("gapStatPlot", "Compares total within intra-cluster variation to that expected under a reference null distribution."),
-                                      plotOutput("gapStatPlot"),
-                                      p("Interpretation: The optimal number of clusters is where the gap statistic is maximized.")
-                                    )
-                                  ),
+
                                   conditionalPanel(
                                     condition = "input.enable_elbow",
                                     column(
