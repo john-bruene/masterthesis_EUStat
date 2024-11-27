@@ -234,21 +234,34 @@ calculate_block_score <- function(block_name, block_topics, votes_df, politician
 }
 
 # Function to calculate the activity index
-calculate_activity_index <- function(data) {
-  # Define weights for the different activities in the order of the columns
-  weights <- c(3, 3, 3, 5, 4, 4, 3, 3, 2, 3, 3, 3, 4)
+# Function to calculate the activity index
+calculate_activity_index <- function(data, activity_names, weights = rep(1, length(activity_names))) {
+  # Validate that the activity_names exist in the dataset
+  missing_columns <- setdiff(activity_names, colnames(data))
+  if (length(missing_columns) > 0) {
+    stop("The following columns are missing in the dataset: ", paste(missing_columns, collapse = ", "))
+  }
   
-  # Define the columns with activity data in the dataset
-  activity_columns <- 18:30
+  # Validate that weights match the number of activity names
+  if (length(weights) != length(activity_names)) {
+    stop("The number of weights must match the number of activity names.")
+  }
   
-  # Calculate the mean for each row, considering NAs and weighting
-  mean_values <- rowMeans(data[, activity_columns] * weights, na.rm = TRUE)
+  # Subset the data to include only the activity columns
+  activity_data <- data[, activity_names]
   
-  # Apply Z-score normalization to the mean
-  normalized_mean <- (mean_values - mean(mean_values, na.rm = TRUE)) / sd(mean_values, na.rm = TRUE)
+  # Calculate the weighted mean for each row, considering NAs
+  mean_values <- rowMeans(activity_data * weights, na.rm = TRUE)
   
-  # Insert the activity index at the 32nd position
-  data <- cbind(data[, 1:31], Activity_Index = normalized_mean, data[, 32:ncol(data)])
+  # Insert the activity index at the appropriate position
+  activity_index_position <- match("Activity_Index", colnames(data))
+  if (is.na(activity_index_position)) {
+    # Add the Activity_Index column at the end if it doesn't exist
+    data$Activity_Index <- mean_values
+  } else {
+    # Overwrite the existing Activity_Index column
+    data$Activity_Index <- mean_values
+  }
   
   return(data)
 }
@@ -413,12 +426,12 @@ calculate_attendance <- function(politician_data, vote_results_df) {
 
 ```{r}
 
-EP6_RCVs_04_09 <- read_excel("EP6_RCVs_04_09.xlsx")
-EP7_RCVs_09_14 <- read_excel("EP7_RCVs_09_14.xlsx")
-EP8_RCVs_14_19 <- read_excel("EP8_RCVs_14_19.xlsx")
-EP9_RCVs_19_22 <- read_excel("EP9_RCVs_19_22.xlsx")
+EP6_RCVs_04_09 <- read_excel("rawdata/EP6_RCVs_04_09.xlsx")
+EP7_RCVs_09_14 <- read_excel("rawdata/EP7_RCVs_09_14.xlsx")
+EP8_RCVs_14_19 <- read_excel("rawdata/EP8_RCVs_14_19.xlsx")
+EP9_RCVs_19_22 <- read_excel("rawdata/EP9_RCVs_19_22.xlsx")
 
-ep_meps_info <- read_csv("ep_meps_info_final.csv")
+ep_meps_info <- read_csv("rawdata/ep_meps_info_final.csv")
 
 
 ```
@@ -481,12 +494,12 @@ toc()
 tic("Block Execution Time")
 
 # Read data
-activity_counts_term_term4 <- read_csv("activity_counts_term_term_4.csv")
-activity_counts_term_term5 <- read_csv("activity_counts_term_term_5.csv")
-activity_counts_term_term6 <- read_csv("activity_counts_term_term_6.csv")
-activity_counts_term_term7 <- read_csv("activity_counts_term_term_7.csv")
-activity_counts_term_term8 <- read_csv("activity_counts_term_term_8.csv")
-activity_counts_term_term9 <- read_csv("activity_counts_term_term_9.csv")
+activity_counts_term_term4 <- read_csv("rawdata/activity_counts_term_term_4.csv")
+activity_counts_term_term5 <- read_csv("rawdata/activity_counts_term_term_5.csv")
+activity_counts_term_term6 <- read_csv("rawdata/activity_counts_term_term_6.csv")
+activity_counts_term_term7 <- read_csv("rawdata/activity_counts_term_term_7.csv")
+activity_counts_term_term8 <- read_csv("rawdata/activity_counts_term_term_8.csv")
+activity_counts_term_term9 <- read_csv("rawdata/activity_counts_term_term_9.csv")
 
 # List of DataFrames
 activity_counts_list <- list(activity_counts_term_term4, activity_counts_term_term5, activity_counts_term_term6,
@@ -615,7 +628,7 @@ if (all_equal) {
 tic("Block Execution Time")
 
 # Read voting data
-EP6_9_Voted_docs <- read_excel("EP6_9_Voted docs.xlsx", 
+EP6_9_Voted_docs <- read_excel("rawdata/EP6_9_Voted docs.xlsx", 
                                col_types = c("numeric", "numeric", "text", 
                                              "numeric", "text", "text", "text", 
                                              "text", "text", "text", "text", "text", 
@@ -863,13 +876,16 @@ P9 <- bind_cols(P9[, 1:31], politician_data_list$P9, P9[, 32:ncol(P9)])
 
 ```{r}
 
-# Column names for P6 18-30
-colnames(P6)[18:30]
+activity_names <- c("CRE", "WDECL", "COMPARL", "REPORT", "REPORT_SHADOW", 
+                    "COMPARL_SHADOW", "MOTION", "OQ", "WEXP", "WQ", 
+                    "MINT", "IMOTION", "PRUNACT")
 
-P6 <- calculate_activity_index(P6)
-P7 <- calculate_activity_index(P7)
-P8 <- calculate_activity_index(P8)
-P9 <- calculate_activity_index(P9)
+weights <- c(1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1)
+
+P6 <- calculate_activity_index(P6, activity_names = activity_names, weights = weights)
+P7 <- calculate_activity_index(P7, activity_names = activity_names, weights = weights)
+P8 <- calculate_activity_index(P8, activity_names = activity_names, weights = weights)
+P9 <- calculate_activity_index(P9, activity_names = activity_names, weights = weights)
 
 
 ```

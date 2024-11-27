@@ -34,9 +34,9 @@ library(waffle)
 library(scales)
 library(showtext)
 library(reshape2)      # For data manipulation
-library(NbClust)       # For Gap Statistic and other indices
-library(gridExtra)     # For arranging multiple plots
-library(ggradar)
+library(NbClust)       
+library(gridExtra)     
+
 
 P6 <- read.csv("data/P6_umap_scores_red_NEW.csv")[, -(1:3)]
 P7 <- read.csv("data/P7_umap_scores_red_NEW.csv")[, -(1:3)]
@@ -88,6 +88,85 @@ five_thirty <- read.csv("www/clustered_congress.csv")
 # P9_reduced <- P9[, selected_columns]
 
 shinyServer(function(input, output, session) {
+  
+
+  
+  clusterPlotObject <- reactiveVal(NULL)
+  finalClusterPlotObject <- reactiveVal(NULL)
+
+  
+  
+  generateClusterPlot <- function(data, clustering_columns, method_name, num_clusters) {
+    # Standardtitel
+    plot_title <- paste(method_name, "Clustering with", num_clusters, "Clusters")
+    
+    # Zusätzlicher Titeltext für HDBSCAN
+    if (method_name == "HDBSCAN") {
+      plot_title <- paste(method_name, "Clustering with minPts =", num_clusters)
+    }
+    
+    # Plot erstellen
+    p <- ggplot(data, aes_string(x = clustering_columns[1], y = clustering_columns[2], color = "Cluster")) +
+      geom_point() +
+      labs(title = plot_title) +
+      theme_minimal() +
+      theme(plot.title = element_text(size = 16, face = "bold"))
+    
+    # Zusätzliche Anpassung für MCA
+    if (selected_mapping() == "MCA") {
+      p <- p + coord_cartesian(ylim = c(NA, 1.2))
+    }
+    
+    return(p)
+  }
+  
+  
+  
+  output$downloadPlots <- downloadHandler(
+    filename = function() {
+      paste("plots.pdf")
+    },
+    content = function(file) {
+      req(clusterPlotObject())
+      req(finalClusterPlotObject())
+      
+      # Punkte im Koordinatensystem und Schriftgrößen anpassen
+      clusterPlot <- clusterPlotObject() + 
+        geom_point(size = 0.5) +  # Punktgröße im Plot
+        theme(
+          plot.title = element_text(size = 20, hjust = 0.5),   # Titel kleiner und zentriert
+          axis.title = element_text(size = 16),                # Achsentitel kleiner
+          axis.text = element_text(size = 14),                 # Achsenbeschriftungen kleiner
+          legend.title = element_text(size = 16),              # Legendentitel kleiner
+          legend.text = element_text(size = 14),               # Legendentext kleiner
+          legend.key.size = unit(0.8, "cm")                   # Schlüsselgröße der Legende
+        )
+      
+      finalClusterPlot <- finalClusterPlotObject() + 
+        geom_point(size = 0.5) +  # Punktgröße im Plot
+        theme(
+          plot.title = element_text(size = 20, hjust = 0.5),   # Titel kleiner und zentriert
+          axis.title = element_text(size = 16),                # Achsentitel kleiner
+          axis.text = element_text(size = 14),                 # Achsenbeschriftungen kleiner
+          legend.title = element_text(size = 16),              # Legendentitel kleiner
+          legend.text = element_text(size =14),               # Legendentext kleiner
+          legend.key.size = unit(0.8, "cm")                   # Schlüsselgröße der Legende
+        )
+      
+      # PDF exportieren
+      pdf(file, width = 16.54, height = 5.84, pointsize = 3)
+      grid.arrange(finalClusterPlot, clusterPlot, ncol = 2)
+      dev.off()
+    }
+  )
+  
+
+  
+  
+  
+
+  
+  
   
   
   
@@ -157,7 +236,7 @@ shinyServer(function(input, output, session) {
       "P7" = c(
         "Group of the Alliance of Liberals and Democrats for Europe" = "gold",
         "Group of the European People's Party (Christian Democrats)" = "blue",
-        "Europe of Freedom and Democracy Group" = "lightblue",
+        "Europe of freedom and democracy Group" = "lightblue",
         "Non-attached Members" = "grey", 
         "Group of the Greens/European Free Alliance" = "green",
         "European Conservatives and Reformists Group" = "darkblue",
@@ -942,6 +1021,8 @@ shinyServer(function(input, output, session) {
       }
     }
     
+    transformedData <- transformedData %>%
+      mutate(across(where(is.numeric), ~ round(.x, 2)))
     
     # Save the transformed data in reactive values
     datasets$transformedData <- transformedData
@@ -1140,6 +1221,7 @@ shinyServer(function(input, output, session) {
   })
   
   
+
   # Plot rendern und Daten verarbeiten
   output$countryMapPlot <- renderPlot({
     req(input$selectedVariable2)  # Sicherstellen, dass eine Variable ausgewählt ist
@@ -1186,7 +1268,7 @@ shinyServer(function(input, output, session) {
         option = "magma",
         direction = -1,
         begin = 0.2, end = 0.9,
-        labels = scales::label_number(accuracy = 1)
+        labels = scales::label_number(accuracy = 0.1)  # Genauere Beschriftung
       ) +
       labs(
         title = paste("Avg.", input$selectedVariable2, "per Country")
@@ -1202,6 +1284,7 @@ shinyServer(function(input, output, session) {
         legend.text = element_text(size = 10)
       )
   })
+  
   
   
   
@@ -1381,6 +1464,20 @@ shinyServer(function(input, output, session) {
       # Run MCA
       mca_results <- MCA(mca_data %>% select(all_of(relevant_columns)), ncp = n_components, graph = FALSE)
       
+      
+      
+      # Variable contributions to dimensions
+      contrib <- as.data.frame(mca_results$var$contrib[, 1:2])  # First two dimensions explicitly
+      
+      # Add variable names
+      contrib$Variable <- rownames(contrib)
+      rownames(contrib) <- NULL
+      
+      # Save contributions to datasets for export
+      datasets$variable_contributions <- contrib
+      
+
+      
       incProgress(0.7, detail = "Running MCA analysis...")
       # Convert MCA output to data frame
       mca_coords <- as.data.frame(mca_results$ind$coord)
@@ -1447,6 +1544,80 @@ shinyServer(function(input, output, session) {
     })
   })
     
+  
+  # Download Handler for MCA Contributions
+  output$downloadContrib <- downloadHandler(
+    filename = function() {
+      paste("variable_contributions_", Sys.Date(), ".csv", sep = "")
+    },
+    content = function(file) {
+      # Write the MCA contributions (from datasets) to a CSV file
+      write.csv(datasets$variable_contributions, file, row.names = FALSE)
+    }
+  )
+  
+  output$topicContributions <- renderTable({
+    if (is.null(datasets$variable_contributions)) {
+      return(data.frame(Message = "Variable contributions are not available yet."))
+    }
+    
+    # Schritt 1: Extract Vote_ID from variable_contributions$Variable
+    variable_contributions <- datasets$variable_contributions
+    
+    legislature_map <- c("P6" = 6, "P7" = 7, "P8" = 8, "P9" = 9)
+    
+    # Filter data based on selected Parliament and relevant votes
+    EP6_9 <- EP6_9_Voted %>%
+      filter(Legislature == legislature_map[input$selectedP])
+    
+    variable_contributions_processed <- variable_contributions %>%
+      mutate(Vote_ID = as.integer(sub("X(\\d+)_.*", "\\1", Variable)))
+    
+    # Schritt 2: Sicherstellen, dass Vote_ID numerisch ist
+    variable_contributions_processed <- variable_contributions_processed %>%
+      mutate(Vote_ID = as.integer(Vote_ID))
+    
+    EP6_9_Voted_processed <- EP6_9 %>%
+      mutate(Vote_ID = as.integer(Vote_ID))
+    
+    # Schritt 3: Dynamische Identifikation der Dimensionen (Dim1, Dim2, ...)
+    dim_cols_pattern <- "^Dim\\s*\\d+$"
+    dim_cols <- names(variable_contributions_processed)[grepl(dim_cols_pattern, names(variable_contributions_processed), ignore.case = TRUE)]
+    
+    if (length(dim_cols) == 0) {
+      stop("Keine Dimensionsspalten in variable_contributions gefunden.")
+    }
+    
+    # Schritt 4: Left Join der Datensätze und Auffüllen fehlender Beiträge mit 0
+    merged_data <- EP6_9_Voted_processed %>%
+      select(Vote_ID, main_policy_name) %>%
+      left_join(variable_contributions_processed %>% select(Vote_ID, all_of(dim_cols)), by = "Vote_ID") %>%
+      mutate(across(all_of(dim_cols), ~replace_na(.x, 0)))
+    
+    # Schritt 5: Aggregation der Beiträge pro Thema
+    topic_contributions <- merged_data %>%
+      group_by(main_policy_name) %>%
+      summarise(across(all_of(dim_cols), sum, na.rm = TRUE)) %>%
+      mutate(Total_Contribution = rowSums(across(all_of(dim_cols)))) %>%
+      rename(`Vote Topic` = main_policy_name) # Rename column
+    
+    # Schritt 6: Add percentages and sort by Total_Contribution
+    total_sum <- sum(topic_contributions$Total_Contribution)
+    topic_contributions <- topic_contributions %>%
+      mutate(Percentage = (Total_Contribution / total_sum) * 100) %>%
+      arrange(desc(Total_Contribution)) %>%
+      slice_head(n = 5) # Select top 5 rows
+    
+    # Select only the relevant columns for display
+    topic_contributions <- topic_contributions %>%
+      select(`Vote Topic`, `Dim 1`, `Dim 2`, Percentage) %>%
+      mutate(Percentage = sprintf("%.2f%%", Percentage)) # Format percentages with 2 decimal places
+    
+    return(topic_contributions)
+  }, striped = TRUE, hover = TRUE, bordered = TRUE)
+  
+  
+  
   
   
   # Observe button to run UMAP
@@ -1629,10 +1800,10 @@ shinyServer(function(input, output, session) {
         
 
         # Render DW-NOMINATE plot
-        ggplot(dwnom_data, aes(x = DW1, y = DW2, color = EPG)) +
+        ggplot(dwnom_data, aes(x = DW1, y = DW2, color = if (input$color_switch) "black" else EPG)) +
           geom_point() +
           labs(title = "DW-NOMINATE Plot", x = "DW1", y = "DW2") +
-          scale_color_manual(values = party_colors) +
+          scale_color_manual(values = if (input$color_switch) c("black" = "black") else party_colors) +
           theme_minimal() +
           theme(
             plot.title = element_text(size = 16, face = "bold"),
@@ -1689,10 +1860,10 @@ shinyServer(function(input, output, session) {
         
         
         # Render MCA plot
-        ggplot(mca_data, aes(x = MC1, y = MC2, color = EPG)) +
+        ggplot(mca_data, aes(x = MC1, y = MC2, color = if (input$color_switch) "black" else EPG)) +
           geom_point() +
           labs(title = "Multiple Correspondence Analysis (MCA) Plot", x = "MCA1", y = "MCA2") +
-          scale_color_manual(values = party_colors) +
+          scale_color_manual(values = if (input$color_switch) c("black" = "black") else party_colors) +
           theme_minimal() +
           theme(
             plot.title = element_text(size = 16, face = "bold"),
@@ -1749,16 +1920,17 @@ shinyServer(function(input, output, session) {
 
         
         
-        # Render UMAP plot
-        ggplot(umap_data, aes(x = UMAP_x, y = UMAP_y, color = EPG)) +
+        # Assuming input$color_switch is the toggle input
+        ggplot(umap_data, aes(x = UMAP_x, y = UMAP_y, color = if (input$color_switch) "black" else EPG)) +
           geom_point() +
           labs(title = "UMAP Plot with Gower Distance", x = "UMAP1", y = "UMAP2") +
-          scale_color_manual(values = party_colors) +
+          scale_color_manual(values = if (input$color_switch) c("black" = "black") else party_colors) +
           theme_minimal() +
           theme(
             plot.title = element_text(size = 16, face = "bold"),
             legend.position = "none"
           )
+        
       })
     } else {
       plotOutput("umapPlot")
@@ -1796,7 +1968,7 @@ shinyServer(function(input, output, session) {
         col_y <- if (input$use_final_votes_only) "coord1D_red" else "coord2D"
         
         # Render DW-NOMINATE plot
-        ggplot(data, aes_string(x = col_x, y = col_y, color = "EPG")) +
+        p <- ggplot(data, aes_string(x = col_x, y = col_y, color = "EPG")) +
           geom_point() +
           labs(title = "DW-NOMINATE Plot", x = "DW1", y = "DW2") +
           scale_color_manual(values = party_colors) +
@@ -1805,6 +1977,9 @@ shinyServer(function(input, output, session) {
             plot.title = element_text(size = 16, face = "bold"),
             legend.position = "none"  # Remove legend
           )
+        
+        finalClusterPlotObject(p)
+        p
       })
       
     } else {
@@ -1829,7 +2004,7 @@ shinyServer(function(input, output, session) {
         col_y <- if (input$use_final_votes_only) "UMAP2_red" else "UMAP2"
         
         # Render UMAP plot
-        ggplot(data, aes_string(x = col_x, y = col_y, color = "EPG")) +
+        p <- ggplot(data, aes_string(x = col_x, y = col_y, color = "EPG")) +
           geom_point() +
           labs(title = "UMAP with Gower Distance", x = "UMAP1", y = "UMAP2") +
           scale_color_manual(values = party_colors) +
@@ -1838,6 +2013,9 @@ shinyServer(function(input, output, session) {
             plot.title = element_text(size = 16, face = "bold"),
             legend.position = "none"  # Remove legend
           )
+        
+        finalClusterPlotObject(p)
+        p
       })
       
     } else {
@@ -1874,8 +2052,8 @@ shinyServer(function(input, output, session) {
         
           p <- p + coord_cartesian(ylim = c(NA, 1.2))  # Upper bound set, lower bound unrestricted
         
-        # Render the plot
-        p
+          finalClusterPlotObject(p)
+          p
       })
     } else {
       output$icon_mca <- renderUI({ NULL })
@@ -1975,21 +2153,13 @@ shinyServer(function(input, output, session) {
       output$elbowPlotK <- NULL  # Elbow plot not applicable for higher dimensions
     }
     
-    # Render cluster plot
+    # Cluster-Plot generieren und speichern
+    cluster_plot <- generateClusterPlot(data, clustering_columns, "K-Means", input$kmeans_k)
+    clusterPlotObject(cluster_plot)
+    
+    # Cluster-Plot rendern
     output$clusterPlot <- renderPlot({
-      p <- ggplot(data, aes_string(x = clustering_columns[1], y = clustering_columns[2], color = "Cluster")) +
-        geom_point() +
-        labs(title = paste("K-Means Clustering with", input$kmeans_k, "Clusters")) +
-        theme_minimal() +
-        theme(plot.title = element_text(size = 16, face = "bold"))
-      
-      # Add dynamic ylim for MCA to limit positive range only
-      if (selected_mapping() == "MCA") {
-        p <- p + coord_cartesian(ylim = c(NA, 1.2))  # Upper bound set, lower bound unrestricted
-      }
-      
-      # Render the plot
-      p
+      clusterPlotObject()
     })
     
     
@@ -2071,25 +2241,16 @@ shinyServer(function(input, output, session) {
       output$elbowPlotPAM <- NULL  # Elbow plot not applicable for higher dimensions
     }
     
-    # Render cluster plot
+    # Cluster-Plot generieren und speichern
+    cluster_plot <- generateClusterPlot(data, clustering_columns, "PAM", input$pam_k)
+    clusterPlotObject(cluster_plot)
+    
+    # Cluster-Plot rendern
     output$clusterPlot <- renderPlot({
-
-        # Plot for 2D clustering
-       p <- ggplot(data, aes_string(x = clustering_columns[1], y = clustering_columns[2], color = "Cluster")) +
-          geom_point() +
-          labs(title = paste("PAM Clustering with", input$pam_k, "Clusters")) +
-          theme_minimal() +
-          theme(plot.title = element_text(size = 16, face = "bold"))
-      
-      # Add dynamic ylim for MCA to limit positive range only
-      if (selected_mapping() == "MCA") {
-        p <- p + coord_cartesian(ylim = c(NA, 1.2))  # Upper bound set, lower bound unrestricted
-      }
-      
-      # Render the plot
-      p
-
+      clusterPlotObject()
     })
+
+
   })
   
   
@@ -2142,22 +2303,15 @@ shinyServer(function(input, output, session) {
     }
     
     # Render cluster plot
+
+    cluster_plot <- generateClusterPlot(data, clustering_columns, "HDBSCAN", input$hdbscan_minPts)
+    clusterPlotObject(cluster_plot)
+    
+    # Cluster-Plot rendern
     output$clusterPlot <- renderPlot({
-        # Plot for 2D clustering
-        p <- ggplot(data, aes_string(x = clustering_columns[1], y = clustering_columns[2], color = "Cluster")) +
-          geom_point() +
-          labs(title = paste("HDBSCAN Clustering (MinPts =", input$hdbscan_minPts, ")")) +
-          theme_minimal() +
-          theme(plot.title = element_text(size = 16, face = "bold"))
-      
-      # Add dynamic ylim for MCA to limit positive range only
-      if (selected_mapping() == "MCA") {
-        p <- p + coord_cartesian(ylim = c(NA, 1.2))  # Upper bound set, lower bound unrestricted
-      }
-      
-      # Render the plot
-      p
+      clusterPlotObject()
     })
+    
   })
   
   
@@ -2227,11 +2381,6 @@ shinyServer(function(input, output, session) {
         intCriteria(as.matrix(clustering_data), clusters, crit = "Calinski_Harabasz")$calinski_harabasz
       })
       
-      gap_stat <- reactive({
-        set.seed(123)
-        gap_stat <- clusGap(clustering_data, FUN = kmeans, nstart = 25, K.max = input$max_clusters, B = 50)
-        return(gap_stat)
-      })
       
       # Silhouette Plot
       if (input$enable_silhouette) {
@@ -2301,24 +2450,7 @@ shinyServer(function(input, output, session) {
       }
 
       
-      # Gap Statistic Plot
 
-      if (input$enable_gapstat) {
-        output$gapStatPlot <- renderPlot({
-          set.seed(123)  # For reproducibility
-          
-          # Calculate Gap Statistic
-          gap_stat_value <- clusGap(clustering_data, FUN = kmeans, K.max = 10, B = 50)  # B = 50 for stability
-          
-          # Visualize Gap Statistic
-          fviz_gap_stat(gap_stat_value) +
-            theme_minimal() +
-            ggtitle("Gap Statistic for Estimating Optimal Clusters") +
-            theme(plot.title = element_text(size = 16, face = "bold")) +
-            xlab("Number of Clusters") +
-            ylab("Gap Statistic Value")
-        })
-      }
       
       # Elbow Plot
       if (input$enable_elbow) {
@@ -2930,8 +3062,6 @@ shinyServer(function(input, output, session) {
     if (!is.null(click_data)) {
       clicked_name <- click_data$key
       
-      # Debugging log for clicked data
-      cat("Clicked Member Name:", clicked_name, "\n")
       
       if (clicked_name %in% data$Name) {
         # Find the politician's details in the dataset
@@ -3081,7 +3211,7 @@ shinyServer(function(input, output, session) {
         fluidRow(
           column(
             width = 6,
-            h3("DW-NOMINATE 2nd Dimension Score Distribution"),
+            h3("DW-NOMINATE 1nd Dimension Score Distribution"),
             conditionalPanel(
               condition = "output.dwNominatePlot== null",
               p("The Plot will appear here after performing the clustering. Make sure to finish the clustering process."),
@@ -3135,16 +3265,28 @@ shinyServer(function(input, output, session) {
   #################
   
   
-  # Dynamic Title
   output$dynamicTitle <- renderUI({
     data <- get_selected_data()
     num_clusters <- length(unique(data$Cluster))
-    parliament_period <- input$selectedP  # Assuming you have this input
+    
+    # Convert parliament_period from "P6", "P7", etc., to "6th", "7th", etc.
+    parliament_period <- switch(
+      input$selectedP,
+      "P6" = "6th European Parliament",
+      "P7" = "7th European Parliament",
+      "P8" = "8th European Parliament",
+      "P9" = "9th European Parliament"
+    )
+    
     h2(
       style = "color: #222222; font-weight: bold;",
-      paste("The", num_clusters, "Groups of Politicians in the European Parliament", parliament_period)
+      HTML(paste0("The ", num_clusters, 
+                  "<span style='font-size: 0.8em; opacity: 0.6;'>-ish</span> Groups of Politicians in the ", parliament_period))
     )
   })
+  
+  
+  
   
   selected_epg <- reactiveVal(NULL)
 
@@ -3644,5 +3786,6 @@ shinyServer(function(input, output, session) {
   
   
 
-
+  
+  
 })

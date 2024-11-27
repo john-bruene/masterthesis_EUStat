@@ -5,7 +5,7 @@ account: john-f-bruene
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 13211466
-bundleId: 9373821
+bundleId: 9422461
 url: https://john-f-bruene.shinyapps.io/masterthesis/
 version: 1
 asMultiple: FALSE

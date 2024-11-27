@@ -65,75 +65,65 @@ combined_data <- combined_data %>%
   left_join(epg_mapping, by = c("Legislature", "EPG")) %>%
   filter(!is.na(EPG_ID))
 
-# Calculate average scores for EPGs in all legislatures
+# Calculate average scores for EPGs in P6 and P9
 epg_percentages <- combined_data %>%
-  group_by(Legislature, EPG_ID) %>%
-  summarise(
-    Average_Score = mean(loyalty_score, na.rm = TRUE),
-    .groups = "drop"
-  )
-
-# Prepare Labels for Start (P6) and End (P9) Percentages
-labels_data <- epg_percentages %>%
   filter(Legislature %in% c("P6", "P9")) %>%
-  spread(Legislature, Average_Score) %>%
+  group_by(Legislature, EPG_ID) %>%
+  summarise(Average_Score = mean(loyalty_score, na.rm = TRUE), .groups = "drop") %>%
+  spread(Legislature, Average_Score, fill = 0) %>%
   rename(Start_Average = P6, End_Average = P9)
 
-# Ensure epg_colors is correctly set
-epg_colors <- epg_mapping %>%
-  select(EPG_ID, Color) %>%
-  distinct() %>%
-  deframe()
+# Merge these averages with the EPG scores for proper placement in the plot
+epg_scores <- epg_scores %>%
+  left_join(epg_percentages, by = "EPG_ID")
 
-# Plot the data
-# Plot the data with EPG names on lines
-plot <- ggplot(epg_percentages, aes(x = Legislature, y = Average_Score, group = EPG_ID, color = EPG_ID)) +
-  geom_line(size = 1) +
-  geom_point(size = 3) +
-  # Add labels for start percentages (P6)
+
+# Updated plot with further adjustments for label spacing
+plot <- ggplot(epg_scores, aes(x = Legislature, y = Average_Score, group = EPG_ID, color = EPG_ID)) +
+  geom_line(size = 1.5) +
+  # Add start averages beside P6
   geom_label_repel(
-    data = labels_data,
-    aes(x = "P6", y = Start_Average, label = round(Start_Average, 2)),
-    nudge_x = -0.2,
+    data = epg_scores %>% filter(Legislature == "P6"),
+    aes(label = paste0(round(Start_Average, 2))),
+    nudge_x = -0.3,
     hjust = 1,
     size = 5,
     family = "Lato",
-    box.padding = 0.6,
-    point.padding = 0.4,
+    box.padding = 0.6,   # Increased padding
+    point.padding = 0.4, # Increased point padding
+    direction = "y",     # Spread labels vertically
     show.legend = FALSE
   ) +
-  # Add labels for end percentages (P9)
+  # Add end averages beside P9
   geom_label_repel(
-    data = labels_data,
-    aes(x = "P9", y = End_Average, label = round(End_Average, 2)),
-    nudge_x = 0.2,
+    data = epg_scores %>% filter(Legislature == "P9"),
+    aes(label = paste0(round(End_Average, 2))),
+    nudge_x = 0.3,
     hjust = 0,
     size = 5,
     family = "Lato",
-    box.padding = 0.6,
-    point.padding = 0.4,
+    box.padding = 0.6,   # Increased padding
+    point.padding = 0.4, # Increased point padding
+    direction = "y",     # Spread labels vertically
     show.legend = FALSE
   ) +
-  # Add EPG names at the end of lines (P9)
   geom_text_repel(
-    data = labels_data,
-    aes(x = "P9", y = End_Average, label = EPG_ID),
-    nudge_x = 0.3,
+    data = epg_scores %>% filter(Legislature == "P9"),
+    aes(label = Axis_Label),
+    nudge_x = 0.5,
     size = 5,
     family = "Lato",
-    direction = "y",
-    hjust = 0,
-    box.padding = 0.5,
-    point.padding = 0.4,
-    show.legend = FALSE
+    max.overlaps = Inf,
+    direction = "both",   # Allow spreading both horizontally and vertically
+    box.padding = 0.5     # Add box padding for Axis_Label
   ) +
   scale_color_manual(values = epg_colors) +
   labs(
-    title = "Average Loyalty Scores by EPG across Legislatures",
-    subtitle = "Trends in loyalty scores, showing percentages for P6 and P9, with group labels",
+    title = "Political Group Trends in the European Parliament",
+    subtitle = "Loyalty score trends with start and end averages for each group",
     x = "Legislative Period",
-    y = "Average Loyalty Score",
-    color = "EPG"
+    y = "Loyalty Score",
+    caption = "Data Source: European Parliament Voting Data"
   ) +
   theme_minimal(base_size = 18, base_family = "Lato") +
   theme(
@@ -142,24 +132,23 @@ plot <- ggplot(epg_percentages, aes(x = Legislature, y = Average_Score, group = 
     legend.position = "none"
   )
 
-# Show the plot
-print(plot)
-
-# Save the plot
+# Save the updated plot
 ggsave(
-  filename = "epg_trends_with_labels_and_names.png",
+  filename = "epg_trends_with_better_label_placement.png",
   plot = plot,
-  width = 12,
-  height = 8,
-  dpi = 300
+  width = 1920 / 100, 
+  height = 1080 / 100, 
+  dpi = 100
 )
 
 ggsave(
-  filename = "epg_trends_with_labels_and_names.pdf",
+  filename = "epg_trends_with_label_boxes.pdf",  # PDF file
   plot = plot,
-  width = 12,
-  height = 8,
-  dpi = 300,
-  device = "pdf"
+  width = 1920 / 100,  # Width in inches (same scale as before)
+  height = 1080 / 100, # Height in inches
+  dpi = 100,           # DPI is ignored for vector formats like PDF
+  device = "pdf"       # Export as PDF
 )
 
+
+plot

@@ -46,7 +46,7 @@ shinyUI(fluidPage(
   ")),
                   
 
-  titlePanel("Silent Partys: A Cluster Analysis of Voting Behavior in the European Parliament"),
+  titlePanel("Silent Parties: A Cluster Analysis of Voting Behavior in the European Parliament"),
     navbarPage("Content",
                tabPanel(icon("home"),
                         
@@ -167,7 +167,13 @@ shinyUI(fluidPage(
 
                         
                         hr(),
-                        p(em("Developed by"),br("John F. Brüne"),style="text-align:center; font-family: times")
+                        p(
+                          em("Submitted in partial fulfillment of the requirements", br("for the degree of Master of Science")),
+                          br(),
+                          em("Developed by"),
+                          br("John F. Brüne"),
+                          style = "text-align:center; font-family: times"
+                        )
                         ),
                tabPanel("Step 1: Introduction",
                         
@@ -792,27 +798,33 @@ shinyUI(fluidPage(
                  h3(p(em("Parliament View"),icon("user",lib = "glyphicon"),style="color:black;text-align:center")),
                  br(),
                  sidebarLayout(
-                     
-                     
-                     # Sidebar panel for politician details and parliament selection
-                     sidebarPanel(
-                       h3("Filter Politicians"),
-                       hr(),
-                       h4("Demographics"),
-                       uiOutput("ageSliderUI"),
-                       uiOutput("genderCheckboxUI"),
-                       uiOutput("countrySelectUI"),
-                       hr(),
-                       h4("Performance"),
-                       uiOutput("activitySliderUI"),
-                       actionButton("resetFilters", "Reset Filters"),
-                       hr(),
-                       # Add more filters as needed
-                       h4("Politician Details"),
-                       uiOutput("politicianDetails"),  # This will display politician details dynamically
-                       verbatimTextOutput("filterSummary"),
-                       width = 3  # Adjust the width to make the sidebar smaller
+
+                   sidebarPanel(
+                     h4("Politician Details"),
+                     uiOutput("politicianDetails"),
+                     hr(),
+                     shinyBS::bsCollapse(
+                       id = "filtersAccordion",  # Unique ID for the collapse panel
+                       open = "Filter Politicians",  # Default open panel
+                       shinyBS::bsCollapsePanel(
+                         title = "Filter Politicians",
+                         h4("Demographics"),
+                         uiOutput("ageSliderUI"),
+                         uiOutput("genderCheckboxUI"),
+                         uiOutput("countrySelectUI"),
+                         hr(),
+                         h4("Performance"),
+                         uiOutput("activitySliderUI"),
+                         actionButton("resetFilters", "Reset Filters"),
+                         hr(),
+                         verbatimTextOutput("filterSummary")
+                       )
                      ),
+                     width = 3
+                   ),
+               
+                 
+                   
                      
                      # Main panel for displaying the parliament plot
                      mainPanel(
@@ -832,47 +844,90 @@ shinyUI(fluidPage(
                
                tabPanel("Step 4: Clustering",
                         
+                 
                         fluidRow(
                           column(width = 2),
                           column(
-                            h4(p("Mapping - From General to Specific", style = "color:black;text-align:center")),
+                            h4(p("Dimension Reduction Techniques - From General to Specific", style = "color:black;text-align:center")),
                             width = 8, style = "background-color:lavender;border-radius: 10px"
                           )
                         ),
                         br(),
                         
                         fluidRow(
+                          column(width = 2),  # Empty column for spacing
+                          column(
+                            p("This flowchart outlines the process from data collection to analysis, highlighting the importance of dimensionality reduction. 
+       High-dimensional data, such as voting records across multiple issues, poses challenges that make dimensionality reduction an essential step.",
+                              style = "color:black;text-align:justify"),
+                            
+                            a(
+                              tags$img(src = "pipeline5.png", width = "100%", height = "auto"),
+                              target = "_blank"
+                            ),
+                            
+                            p("Dimensionality reduction is necessary for several reasons:", style = "color:black;text-align:justify"),
+                            tags$ul(
+                              tags$li(tags$b("Visualization:"), " Reduces the complexity of high-dimensional data to enable easy visualization in two or three dimensions."),
+                              tags$li(tags$b("Pattern Discovery:"), " Simplifies data to highlight underlying patterns that may be hidden in higher dimensions."),
+                              tags$li(tags$b("Computational Efficiency:"), " Reduces the computational cost of clustering and other algorithms by simplifying the input data."),
+                              tags$li(tags$b("Noise Reduction:"), " Focuses on the most informative dimensions, removing less relevant variability.")
+                            ),
+                            
+                            p("This tab focuses on reducing the dimensions of voting data to identify clusters of politicians with similar voting behavior. 
+       The scatterplot of raw data illustrates the difficulty of interpreting patterns in the original dimensions. The MCA scatterplot demonstrates how dimensionality reduction 
+       simplifies and clarifies these patterns, enabling better identification of clusters.",
+                              style = "color:black;text-align:justify; background-color:lightyellow; padding:10px"),
+                            
+                            width = 8, style = "background-color:lavender;border-radius: 10px; padding:15px"
+                          ),
+                          column(width = 2)  # Empty column for spacing
+                        ),
+                        
+                        
+                        
+                        br(),
+                        
+                        fluidRow(
                           column(width = 2, icon("hand-point-right", "fa-5x"), align = "center"),
                           column(
-                            width = 8,  # Make the text box a bit narrower
+                            width = 8,
+                            h4("Dimensionality Reduction Techniques", style = "color:black;text-align:center"),
+                            
                             p("In this step, we employ three different dimensionality reduction techniques—UMAP, MCA, and DW-NOMINATE—to progressively reveal patterns in the voting data. 
-     Each method has distinct strengths, and the process moves from a broad representation to a more targeted political spectrum approach. These mappings will help us understand and visualize latent voting patterns within the European Parliament.",
+       Each method has distinct strengths, and the process moves from a broad representation to a more targeted political spectrum approach. These mappings help us 
+       visualize latent voting patterns within the European Parliament.",
                               style = "color:black;text-align:justify"),
                             
                             br(),
                             
-                            h4("1. DW-NOMINATE - A Political Spectrum Analysis"),
-                            p("DW-NOMINATE is a sophisticated method commonly used in political science to map representatives onto a multidimensional ideological spectrum. 
-     By applying DW-NOMINATE, we gain an even more detailed understanding of MEP alignments, placing them within an ideological context based on their voting behavior. 
-     This approach goes beyond general clusters to locate each MEP’s position on specific political dimensions, drawing out ideological trends and bloc formations within the Parliament.",
-                              style = "color:black;text-align:justify; background-color:lightyellow; padding:10px"),
-                            
-                            
-                            br(),
-                            h4("2. MCA - A Categorical Perspective"),
-                            p("Multiple Correspondence Analysis (MCA) further refines our view by emphasizing the relationships between categorical voting behaviors, especially helpful for data that is structured around discrete votes. 
-     MCA identifies nuanced alignments between MEPs based on their categorical voting responses, providing a more focused clustering structure tailored to parliamentary voting patterns.",
-                              style = "color:black;text-align:justify; background-color:lightyellow; padding:10px"),
+                            # DW-NOMINATE Section
+                            h4("1. DW-NOMINATE - A Political Spectrum Analysis", style = "color:black"),
+                            p("DW-NOMINATE is a widely used method in political science to map representatives onto a multidimensional ideological spectrum. 
+       It provides a detailed understanding of MEP alignments by placing them within an ideological context based on their voting behavior. 
+       This approach reveals ideological trends and bloc formations within the Parliament, helping us go beyond general clusters to locate each MEP’s position 
+       on specific political dimensions.",
+                              style = "color:black;text-align:justify;background-color:lightyellow;padding:10px;border:1px solid black;border-radius:5px"),
                             
                             br(),
-                            h4("3. UMAP - An Overview"),
-                            p("UMAP (Uniform Manifold Approximation and Projection) is a versatile tool for reducing high-dimensional data to a lower-dimensional space. 
-     UMAP creates a simplified visual representation of MEP voting data, highlighting clusters that may indicate shared voting patterns without predefining any structure. 
-     This approach provides an initial view into possible voting blocs within the Parliament.",
-                              style = "color:black;text-align:justify; background-color:lightyellow; padding:10px"),
                             
+                            # MCA Section
+                            h4("2. MCA - A Categorical Perspective", style = "color:black"),
+                            p("Multiple Correspondence Analysis (MCA) refines our understanding by focusing on relationships between categorical voting behaviors. 
+       This method is particularly helpful for data structured around discrete votes, as it identifies nuanced alignments between MEPs based on their voting responses. 
+       MCA creates a focused clustering structure tailored to parliamentary voting patterns.",
+                              style = "color:black;text-align:justify;background-color:lightyellow;padding:10px;border:1px solid black;border-radius:5px"),
                             
-                            style = "background-color:lavender; border-radius: 10px"
+                            br(),
+                            
+                            # UMAP Section
+                            h4("3. UMAP - An Overview", style = "color:black"),
+                            p("UMAP (Uniform Manifold Approximation and Projection) is a flexible tool for reducing high-dimensional data into a simpler, lower-dimensional space. 
+       It provides an initial view into possible voting blocs within the Parliament, creating a visual representation of MEP voting data that highlights clusters 
+       without predefining any structure.",
+                              style = "color:black;text-align:justify;background-color:lightyellow;padding:10px;border:1px solid black;border-radius:5px"),
+                            
+                            style = "background-color:papayawhip;border-radius:10px;padding:15px"
                           ),
                           
                           # Add the arrow in a separate column
@@ -891,21 +946,25 @@ shinyUI(fluidPage(
                         ),
                         br(),
                         
-
+                   
                         
                         # 1. Panel: Clustering Methoden
                         tabsetPanel(
                           tabPanel("Mapping Methods",
+                                   br(),
                                    
                                    fluidRow(column(width = 2),
                                             column(
-                                              h4(p("Clustering Methods", style = "color:black;text-align:center")),
+                                              h4(p("Decision for a dimension reduction technique", style = "color:black;text-align:center")),
                                               width = 8, style = "background-color:lavender; border-radius: 10px")),
                                    br(),
                                    
                                    sidebarLayout(
                                      sidebarPanel(
                                        
+                                       h4("Settings"),
+                                       hr(),
+                 
                                        # Legislature Selection
                                        selectInput("selectedP", 
                                                    p("Select Parliament:", style = "color:black; text-align:center; font-weight:bold;"),
@@ -927,6 +986,7 @@ shinyUI(fluidPage(
                                        bsTooltip("use_final_votes_only", 
                                                  "Check this option to analyze only the final votes instead of intermediate votes.",
                                                  "right"),
+                                       checkboxInput("color_switch", "Without coloring", FALSE), # Switch für Farben
                                        
                                        hr(),
                                        
@@ -951,7 +1011,7 @@ shinyUI(fluidPage(
                                            bsTooltip("absenceThreshold", 
                                                      "Set the minimum attendance percentage for votes to be included in the analysis.", 
                                                      "right"),
-                                           
+
                                            sliderInput("mca_ncp", "Number of Components", value = 2, min = 2, max = 10),
                                            bsTooltip("mca_ncp", 
                                                      "Choose the number of components for MCA.",
@@ -960,7 +1020,13 @@ shinyUI(fluidPage(
                                            actionButton("runMCA", "Run MCA"),
                                            bsTooltip("runMCA", 
                                                      "Run the MCA algorithm for dimensionality reduction.",
-                                                     "right")
+                                                     "right"),
+
+                                           hr(),
+                                           downloadButton("downloadContrib", "Download Variable Contributions"),
+                                           br(),
+                                           br(),
+                                           tableOutput("topicContributions")
                                          ),
                                          
                                          shinyBS::bsCollapsePanel(
@@ -1006,9 +1072,21 @@ shinyUI(fluidPage(
                                      
 
                                      mainPanel(
-                                       h3(p(strong('Mapping Output'), style = "color:salmon; text-align:center")),
+                                       h3(p('Mapping Output', style = "color:salmon; text-align:center")),
                                        hr(),
-                                       textOutput("result"),
+                                       
+                                       # Explanatory Text with Arrow
+                                       tags$div(
+                                         style = "text-align:right; margin-bottom:15px;",
+                                         "Use the checkboxes in this column to select a mapping method for clustering.",
+                                         tags$div(
+                                           style = "position:relative; display:inline-block; text-align:right;",
+                                           tags$span(
+                                             style = "font-size:24px; color:gray; margin-top:-10px;",
+                                             "⬇"  # Unicode down arrow
+                                           )
+                                         )
+                                       ),
                                        
                                        # DW-NOMINATE Plot Section
                                        fluidRow(
@@ -1021,7 +1099,7 @@ shinyUI(fluidPage(
                                            width = 2,
                                            checkboxInput("select_dwnom", label = NULL, value = FALSE, width = "100%"),
                                            uiOutput("icon_dwnom")  # Placeholder for icon
-                                         ), style="border:1px solid black"
+                                         ), style = "border:1px solid black"
                                        ),
                                        hr(),
                                        
@@ -1036,7 +1114,7 @@ shinyUI(fluidPage(
                                            width = 2,
                                            checkboxInput("select_mca", label = NULL, value = FALSE, width = "100%"),
                                            uiOutput("icon_mca")  # Placeholder for icon
-                                         ), style="border:1px solid black"
+                                         ), style = "border:1px solid black"
                                        ),
                                        hr(),
                                        
@@ -1051,11 +1129,13 @@ shinyUI(fluidPage(
                                            width = 2,
                                            checkboxInput("select_umap", label = NULL, value = FALSE, width = "100%"),
                                            uiOutput("icon_umap")  # Placeholder for icon
-                                         ), style="border:1px solid black"
+                                         ), style = "border:1px solid black"
                                        ),
                                        br(),
+
                                        br()
                                      )
+                                     
                                      
                                      
                                    )
@@ -1065,6 +1145,8 @@ shinyUI(fluidPage(
                           
                           
                           tabPanel("Clustering Methods",
+                                   
+                                   br(),
                                    
                                    fluidRow(column(width = 2),
                                             column(
@@ -1104,7 +1186,7 @@ shinyUI(fluidPage(
                                      ),
                                      
                                      mainPanel(
-                                       h3(p(strong('Clustering Output'), style = "color:salmon; text-align:center")),
+                                       h3(p('Clustering Output', style = "color:salmon; text-align:center")),
                                        
                                        h4("Try different clustering techniques"),
                                        p("Visualize the clusters formed by each method in the UMAP-reduced space. The left plot shows the initial dimension reduction, while the right plot displays the cluster assignments. Adjust clustering parameters to explore different groupings."),
@@ -1118,6 +1200,8 @@ shinyUI(fluidPage(
                                          style = "border:1px solid black"
                                        ),
                                        br(),
+                                       downloadButton("downloadPlots", "Download plots (PDF)"),
+                                       br(),
                                        br()
 
                                        
@@ -1129,11 +1213,12 @@ shinyUI(fluidPage(
                           # UI-Teil
                           tabPanel(
                             "Cluster Metrics and Stability",
-                            fluidRow(
-                              column(
-                                width = 12,
-                                h3("Cluster Validation Metrics", style = "color:black;text-align:center")
-                              )
+                            br(),
+                            
+                            fluidRow(column(width = 2),
+                                     column(
+                                       h4(p("Compare the metrics for different clustering settings", style = "color:black;text-align:center")),
+                                       width = 8, style = "background-color:lavender; border-radius: 10px")
                             ),
                             br(),
                             sidebarLayout(
@@ -1142,7 +1227,7 @@ shinyUI(fluidPage(
                                 checkboxInput("enable_silhouette", "Show Silhouette Score", value = TRUE),
                                 checkboxInput("enable_dbindex", "Show Davies-Bouldin Index", value = TRUE),
                                 checkboxInput("enable_chindex", "Show Calinski-Harabasz Index", value = TRUE),
-                                checkboxInput("ignore_first_cluster", "Disregard Cluster 0 (Assumed Outliers)", value = TRUE),
+                                checkboxInput("ignore_first_cluster", "(Only HDBSCAN) Disregard Cluster 0 (Outliers)", value = TRUE),
                                 actionButton("runMetrics", "Calculate Metrics",  class = "btn-success"),
                                 br(),
                                 hr(),
@@ -1200,7 +1285,6 @@ shinyUI(fluidPage(
                               # Sidebar panel for politician details and parliament selection
                               sidebarPanel(
                                 h4("Choose Metrics"),
-                                checkboxInput("enable_gapstat", "Show Gap Statistic", value = FALSE),
                                 checkboxInput("enable_elbow", "Show Elbow Method", value = TRUE),
                                 checkboxInput("enable_bootstrap", "Show Cluster Stability (Bootstrapping)", value = TRUE),
                                 numericInput("num_bootstrap", "Number of Bootstrap Samples:", value = 100, min = 10, max = 200, step = 10),
@@ -1353,6 +1437,10 @@ shinyUI(fluidPage(
                                                   tags$li(
                                                     "ggiraph and Shiny for interactive visualizations in R. Documentation available ",
                                                     tags$a(href = "https://davidgohel.github.io/ggiraph/", target = "_blank", "here.")
+                                                  ),
+                                                  tags$li(
+                                                    "Shiny inspired by Didactic modeling process: Linear regression Oscar Daniel Rivera Baena. ",
+                                                    tags$a(href = "https://shiny.posit.co/r/gallery/education/didacting-modeling/", target = "_blank", "View here.")
                                                   )
                                                 ),
                                                 br(),
