@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('shiny','shinythemes','DT','ggplot2','car','nortest','tseries','RcmdrMisc','lmtest','sortable','plotly','shinyBS','shinyjs','fontawesome','reactable','bslib','shinyWidgets'), repos='http://cran.rstudio.com/')"
 
 # Installiere ggparliament von GitHub
-RUN R -e \"if (!requireNamespace('remotes', quietly=TRUE)) install.packages('remotes', repos='http://cran.rstudio.com/'); remotes::install_github('zmeers/ggparliament')\"
+RUN R -e 'if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes", repos="http://cran.rstudio.com/"); remotes::install_github("zmeers/ggparliament")'
 
 # Kopiere alle Dateien (inklusive ui.R, server.R, Daten, www, etc.) in den Shiny-Server-Ordner
 COPY . /srv/shiny-server/
