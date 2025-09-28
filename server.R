@@ -13,7 +13,6 @@ library(clusterCrit)
 library(readr)
 library(sortable)
 library(plotly)
-library(ggparliament)
 library(readxl)
 library(umap)
 library(dbscan)
@@ -1335,9 +1334,6 @@ shinyServer(function(input, output, session) {
   
 
 
-
-
-
   
   
   ##############
@@ -1378,8 +1374,10 @@ shinyServer(function(input, output, session) {
       dwnom_data$Budget_Score <- dwnom_data$budget_votesScore
       
       datasets$dwnom_data <- dwnom_data %>%
-        select(coord1D, coord2D, EPG, Name, Country, Party, Photo, Age, Experience, Sex, Winning_Index, Attendance_Index, Loyalty_Index, Activity_Index, Economy_Score, Social_Score, Foreign_Policy_Score, Industry_Score, Education_Score, Budget_Score)
+        select(coord1D, coord2D, coord1D_red, coord2D_red, EPG, Name, Country, Party, Photo, Age, Experience, Sex, Winning_Index, Attendance_Index, Loyalty_Index, Activity_Index, Economy_Score, Social_Score, Foreign_Policy_Score, Industry_Score, Education_Score, Budget_Score)
       
+      
+
       # Render DW-NOMINATE plot
       ggplot(dwnom_data, aes(x = coord1D, y = coord2D, color = EPG)) +
         geom_point() +
@@ -1427,7 +1425,7 @@ shinyServer(function(input, output, session) {
       
       relevant_columns <- paste0("X", relevant_votes)
       mca_data <- data %>%
-        select(all_of(relevant_columns), EPG, FullName, Country, Party, Photo, Age_At_Start, Experience_at_Start, Gender, Winning_Score, Attendance_Score, loyalty_score, Activity_Index, economic_votesScore, social_votesScore, foreign_policy_votesScore, industry_votesScore, education_votesScore, budget_votesScore) %>%
+        select(all_of(relevant_columns), EPG, FullName, Country, Party, Photo, Age_At_Start, Experience_at_Start, Gender, Winning_Score, Attendance_Score, loyalty_score, Activity_Index, economic_votesScore, social_votesScore, foreign_policy_votesScore, industry_votesScore, education_votesScore, budget_votesScore, coord1D_red, coord2D_red) %>%
         filter(Attendance_Score > input$absenceThreshold * 0.01)
       
       # Convert all voting variables to factors
@@ -1628,7 +1626,7 @@ shinyServer(function(input, output, session) {
       
       
       relevant_columns <- paste0("X", relevant_votes)
-      umap_data <- data %>% select(all_of(relevant_columns), EPG, FullName, Country, Party, Photo, Age_At_Start, Experience_at_Start, Gender, Winning_Score, Attendance_Score, loyalty_score, Activity_Index, economic_votesScore, social_votesScore, foreign_policy_votesScore, industry_votesScore, education_votesScore, budget_votesScore)
+      umap_data <- data %>% select(all_of(relevant_columns), EPG, FullName, Country, Party, Photo, Age_At_Start, Experience_at_Start, Gender, Winning_Score, Attendance_Score, loyalty_score, Activity_Index, economic_votesScore, social_votesScore, foreign_policy_votesScore, industry_votesScore, education_votesScore, budget_votesScore, coord1D_red, coord2D_red)
       umap_data <- umap_data %>% filter(Attendance_Score > input$absenceThreshold*0.01)
       
       
@@ -3769,9 +3767,7 @@ shinyServer(function(input, output, session) {
   })
   
   
-  #### progress bar
-  
-  
+
 
   
   
